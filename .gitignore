@@ -1,0 +1,9 @@
+/.pytest_cache
+/PytestTest/.pytest_cache
+/PytestTest/__pycache__
+/PythonTest/__pycache__
+/RequestsTest/utils/__pycache__
+/SeleniumTest/__pycache__
+/UnittestTest/cases/__pycache__
+/UnittestTest/po/__pycache__
+/UnittestTest/utils/__pycache__

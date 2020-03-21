@@ -1,0 +1,238 @@
+{
+  "uid" : "fbd118615ecdd7bf",
+  "name" : "test_01_login_success",
+  "fullName" : "test_login#test_01_login_success",
+  "historyId" : "8a062600c192e4248c655b07e9bb83d1",
+  "time" : {
+    "start" : 1574260742659,
+    "stop" : 1574260742751,
+    "duration" : 92
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "7acb737e51c3b210",
+      "name" : "log",
+      "source" : "7acb737e51c3b210.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "7bed0e806f9b9223",
+      "name" : "stdout",
+      "source" : "7bed0e806f9b9223.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "fe1aae342ad7910c",
+      "name" : "stderr",
+      "source" : "fe1aae342ad7910c.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 3,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "host",
+    "value" : "SNake"
+  }, {
+    "name" : "thread",
+    "value" : "83328-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "3cf42986a4a2daf1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574260622848,
+        "stop" : 1574260622932,
+        "duration" : 84
+      }
+    }, {
+      "uid" : "374bc3c05ec0cd4b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574260503167,
+        "stop" : 1574260503250,
+        "duration" : 83
+      }
+    }, {
+      "uid" : "81496b6b40321791",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574260383002,
+        "stop" : 1574260383091,
+        "duration" : 89
+      }
+    }, {
+      "uid" : "5ebaa25dcb0a0cc3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574260263018,
+        "stop" : 1574260263123,
+        "duration" : 105
+      }
+    }, {
+      "uid" : "28f2962aac712823",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574260143347,
+        "stop" : 1574260143442,
+        "duration" : 95
+      }
+    }, {
+      "uid" : "9f1fe9ac632f7d5e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574260022817,
+        "stop" : 1574260022898,
+        "duration" : 81
+      }
+    }, {
+      "uid" : "b5bc69ce3d5a558d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574259902644,
+        "stop" : 1574259902740,
+        "duration" : 96
+      }
+    }, {
+      "uid" : "aace0083e752db7c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574259783156,
+        "stop" : 1574259783245,
+        "duration" : 89
+      }
+    }, {
+      "uid" : "502b839d6162b76a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574259662635,
+        "stop" : 1574259662717,
+        "duration" : 82
+      }
+    }, {
+      "uid" : "5a7f8bb58daa524e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574259542539,
+        "stop" : 1574259542641,
+        "duration" : 102
+      }
+    }, {
+      "uid" : "2174006553e48474",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574259422743,
+        "stop" : 1574259422831,
+        "duration" : 88
+      }
+    }, {
+      "uid" : "cc1e694f6e2d476b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574259312013,
+        "stop" : 1574259312101,
+        "duration" : 88
+      }
+    }, {
+      "uid" : "f52b0563351033da",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574259302735,
+        "stop" : 1574259302825,
+        "duration" : 90
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 13,
+        "unknown" : 0,
+        "total" : 13
+      },
+      "items" : [ {
+        "uid" : "54dea21c6a684c99",
+        "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/16/allure/#testresult/54dea21c6a684c99",
+        "status" : "passed",
+        "time" : {
+          "start" : 1574260622848,
+          "stop" : 1574260622932,
+          "duration" : 84
+        }
+      }, {
+        "uid" : "119b19cd0f723268",
+        "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/15/allure/#testresult/119b19cd0f723268",
+        "status" : "passed",
+        "time" : {
+          "start" : 1574260503167,
+          "stop" : 1574260503250,
+          "duration" : 83
+        }
+      }, {
+        "uid" : "1bc41342af167947",
+        "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/14/allure/#testresult/1bc41342af167947",
+        "status" : "passed",
+        "time" : {
+          "start" : 1574260383002,
+          "stop" : 1574260383091,
+          "duration" : 89
+        }
+      }, {
+        "uid" : "53afbba56c4cd36e",
+        "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/13/allure/#testresult/53afbba56c4cd36e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1574260263018,
+          "stop" : 1574260263123,
+          "duration" : 105
+        }
+      }, {
+        "uid" : "ebe2888031c121ff",
+        "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/12/allure/#testresult/ebe2888031c121ff",
+        "status" : "passed",
+        "time" : {
+          "start" : 1574260143347,
+          "stop" : 1574260143442,
+          "duration" : 95
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "fbd118615ecdd7bf.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,2 @@
+[Hosts]
+localhost=C:\Users\SNake\VSCodeProjects\ljtest201910\LoadrunnerTests\demo1\res\localhost_1.eve

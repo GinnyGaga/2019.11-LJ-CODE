@@ -1,0 +1,694 @@
+﻿<?xml version="1.0"?>
+  <!DOCTYPE Report
+[
+<!ELEMENT Report (General ,(Doc|BPT)) >
+<!ATTLIST Report ver CDATA #REQUIRED tmZone CDATA #REQUIRED>
+
+<!ELEMENT General ( DocLocation ) >
+<!ATTLIST General productName CDATA #REQUIRED productVer CDATA #REQUIRED os CDATA #REQUIRED host CDATA #REQUIRED>
+
+<!ELEMENT BPT (DName,Res,DVer?,TSet?,TInst?,NodeArgs,Doc*) >
+<!ATTLIST BPT rID ID #REQUIRED >
+
+<!ELEMENT Doc (DName, Res, DVer?, TSet?, TInst?, RunType?, DT?, Step*, Action+, DIter*, Action*, Summary?, NodeArgs?)> 
+<!ATTLIST Doc rID ID #REQUIRED type (Test|BC) "Test" productName CDATA #REQUIRED BCIter CDATA #IMPLIED >
+
+<!ELEMENT RunType ( #PCDATA )>
+<!ATTLIST RunType fmStep (False|True) "False" batch (False|True) "False" upDesc (False|True) "False" upChk (False|True) "False" upAS (False|True) "False">
+
+<!ELEMENT DName ( #PCDATA ) >
+
+<!ELEMENT Res ( #PCDATA ) >
+
+<!ELEMENT DVer ( #PCDATA ) >
+
+<!ELEMENT TSet ( #PCDATA ) >
+
+<!ELEMENT TInst ( #PCDATA ) >
+
+<!ELEMENT DIter (Step?,Action+,Summary?,NodeArgs)>
+<!ATTLIST DIter rID ID #REQUIRED iterID CDATA #REQUIRED>
+
+<!ELEMENT DocLocation ( #PCDATA )>
+
+<!ELEMENT Action (AName,AIter*,(Step|HtmlStep|Action)*,Summary,NodeArgs) >
+<!ATTLIST Action rID ID #REQUIRED>
+
+<!ELEMENT AIter ((Step|HtmlStep|Action)*,Summary?,NodeArgs) >
+<!ATTLIST AIter rID ID #REQUIRED iterID CDATA #REQUIRED>
+
+<!ELEMENT AName ( #PCDATA ) >
+
+<!ELEMENT Step (Obj,Details,Time,(Step|HtmlStep|Doc)*,NodeArgs) >
+<!ATTLIST Step rID ID #REQUIRED retval CDATA #IMPLIED>
+
+<!ELEMENT HtmlStep (HTML,(Step|HtmlStep|Doc)*,NodeArgs) >
+<!ATTLIST HtmlStep rID ID #REQUIRED >
+
+<!ELEMENT Obj ( #PCDATA ) >
+<!ATTLIST Obj plainTxt (False|True) "True">
+
+<!ELEMENT Details ( #PCDATA ) >
+<!ATTLIST Details plainTxt (False|True) "True">
+
+<!ELEMENT Time ( #PCDATA ) >
+
+<!ELEMENT HTML ( #PCDATA ) >
+
+<!ELEMENT Disp ( #PCDATA ) >
+
+<!ELEMENT NodeArgs (Disp,TopPane?,BtmPane?)>
+<!ATTLIST NodeArgs eType CDATA #REQUIRED icon CDATA #REQUIRED nRep CDATA #REQUIRED filter (False|True) "True">
+<!ATTLIST NodeArgs status (Passed|Failed|Done|Warning|Information) "Done">
+<!ATTLIST NodeArgs iconSel CDATA #IMPLIED nType CDATA #IMPLIED >
+
+<!ELEMENT TopPane (Path)>
+
+<!ELEMENT BtmPane ( (Path|WR)?,ASHilite?)>
+<!ATTLIST BtmPane vType CDATA "HTML">
+
+<!ELEMENT Path ( #PCDATA ) >
+
+<!ELEMENT ASHilite ( #PCDATA ) >
+
+<!ELEMENT WR ( #PCDATA ) >
+
+<!ELEMENT DT (NodeArgs) >
+<!ATTLIST DT rID ID #REQUIRED>
+
+<!ELEMENT Summary (Param*)>
+<!ATTLIST Summary sTime CDATA #IMPLIED eTime CDATA #IMPLIED passed CDATA #IMPLIED failed CDATA #IMPLIED warnings CDATA #IMPLIED retval CDATA #IMPLIED stopped (False|True) "False" >
+
+<!ELEMENT Param (ParamName,ParamVal)+ >
+<!ATTLIST Param paramInOut (In|Out) "In">
+
+<!ELEMENT ParamName ( #PCDATA ) >
+
+<!ELEMENT ParamVal ( #PCDATA ) >
+
+]
+> <Report ver="2.0" tmZone="中国标准时间">
+<General productName="Vugen" productVer="11" os="" host="SNAKE"><DocLocation><![CDATA[C:\Users\SNake\VSCodeProjects\ljtest201910\LoadrunnerTests\demo1]]></DocLocation></General>
+<Doc rID="T1"   productName= "Vugen"  >
+<DName><![CDATA[demo1]]></DName>
+<Res><![CDATA[result1]]></Res>
+<Action rID="T2">
+<AName><![CDATA[vuser_init]]></AName>
+<Summary sTime="2019/11/28 - 22:13:12" eTime="2019/11/28 - 22:13:12" passed="0" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="5" >
+<Disp><![CDATA[vuser_init Summary]]></Disp>
+</NodeArgs>
+</Action>
+<DIter rID="T3" iterID="1" >
+<Action rID="T4">
+<AName><![CDATA[Action]]></AName>
+<Step rID="T5">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text="code": 200,</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:12]]></Time>
+<NodeArgs eType="General" icon="4" nRep="9" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T6">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Save Param]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>ParamName =<STRONG><FONT COLOR=#00AF00>token1</FONT></STRONG><BR>Left Boundary = <STRONG><FONT COLOR=#00AF00>LB="token": "</FONT></STRONG><BR>Right Boundary = <STRONG><FONT COLOR=#00AF00>RB="</FONT></STRONG><BR>Instance = <STRONG><FONT COLOR=#00AF00></FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:12]]></Time>
+<NodeArgs eType="General" icon="5" nRep="10" >
+<Disp><![CDATA[Service: Reg Save Param]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T7">
+<Obj plainTxt="False" ><![CDATA[Custom Request: web_custom_request]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:13]]></Time>
+<NodeArgs eType="General" icon="6" nRep="11" status="Passed" >
+<Disp><![CDATA[Custom Request: web_custom_request]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration1\t1.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T8">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text="code": 200,</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:13]]></Time>
+<NodeArgs eType="General" icon="4" nRep="12" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T9">
+<Obj plainTxt="False" ><![CDATA[Custom Request: web_custom_request]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:13]]></Time>
+<NodeArgs eType="General" icon="6" nRep="13" status="Passed" >
+<Disp><![CDATA[Custom Request: web_custom_request]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration1\t2.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Summary sTime="2019/11/28 - 22:13:12" eTime="2019/11/28 - 22:13:13" passed="2" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="8" status="Passed" >
+<Disp><![CDATA[Action Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="7" status="Passed" >
+<Disp><![CDATA[demo1 Iteration 1 (Row 1)]]></Disp>
+</NodeArgs>
+</DIter>
+<DIter rID="T10" iterID="2" >
+<Action rID="T11">
+<AName><![CDATA[Action]]></AName>
+<Step rID="T12">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text="code": 200,</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:13]]></Time>
+<NodeArgs eType="General" icon="4" nRep="18" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T13">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Save Param]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>ParamName =<STRONG><FONT COLOR=#00AF00>token1</FONT></STRONG><BR>Left Boundary = <STRONG><FONT COLOR=#00AF00>LB="token": "</FONT></STRONG><BR>Right Boundary = <STRONG><FONT COLOR=#00AF00>RB="</FONT></STRONG><BR>Instance = <STRONG><FONT COLOR=#00AF00></FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:13]]></Time>
+<NodeArgs eType="General" icon="5" nRep="19" >
+<Disp><![CDATA[Service: Reg Save Param]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T14">
+<Obj plainTxt="False" ><![CDATA[Custom Request: web_custom_request]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:14]]></Time>
+<NodeArgs eType="General" icon="6" nRep="20" status="Passed" >
+<Disp><![CDATA[Custom Request: web_custom_request]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration2\t1.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T15">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text="code": 200,</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:14]]></Time>
+<NodeArgs eType="General" icon="4" nRep="21" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T16">
+<Obj plainTxt="False" ><![CDATA[Custom Request: web_custom_request]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:14]]></Time>
+<NodeArgs eType="General" icon="6" nRep="22" status="Passed" >
+<Disp><![CDATA[Custom Request: web_custom_request]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration2\t2.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Summary sTime="2019/11/28 - 22:13:13" eTime="2019/11/28 - 22:13:14" passed="2" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="17" status="Passed" >
+<Disp><![CDATA[Action Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="16" status="Passed" >
+<Disp><![CDATA[demo1 Iteration 2 (Row 2)]]></Disp>
+</NodeArgs>
+</DIter>
+<DIter rID="T17" iterID="3" >
+<Action rID="T18">
+<AName><![CDATA[Action]]></AName>
+<Step rID="T19">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text="code": 200,</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:14]]></Time>
+<NodeArgs eType="General" icon="4" nRep="27" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T20">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Save Param]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>ParamName =<STRONG><FONT COLOR=#00AF00>token1</FONT></STRONG><BR>Left Boundary = <STRONG><FONT COLOR=#00AF00>LB="token": "</FONT></STRONG><BR>Right Boundary = <STRONG><FONT COLOR=#00AF00>RB="</FONT></STRONG><BR>Instance = <STRONG><FONT COLOR=#00AF00></FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:14]]></Time>
+<NodeArgs eType="General" icon="5" nRep="28" >
+<Disp><![CDATA[Service: Reg Save Param]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T21">
+<Obj plainTxt="False" ><![CDATA[Custom Request: web_custom_request]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:14]]></Time>
+<NodeArgs eType="General" icon="6" nRep="29" status="Passed" >
+<Disp><![CDATA[Custom Request: web_custom_request]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration3\t1.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T22">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text="code": 200,</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:14]]></Time>
+<NodeArgs eType="General" icon="4" nRep="30" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T23">
+<Obj plainTxt="False" ><![CDATA[Custom Request: web_custom_request]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:15]]></Time>
+<NodeArgs eType="General" icon="6" nRep="31" status="Passed" >
+<Disp><![CDATA[Custom Request: web_custom_request]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration3\t2.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Summary sTime="2019/11/28 - 22:13:14" eTime="2019/11/28 - 22:13:15" passed="2" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="26" status="Passed" >
+<Disp><![CDATA[Action Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="25" status="Passed" >
+<Disp><![CDATA[demo1 Iteration 3 (Row 3)]]></Disp>
+</NodeArgs>
+</DIter>
+<DIter rID="T24" iterID="4" >
+<Action rID="T25">
+<AName><![CDATA[Action]]></AName>
+<Step rID="T26">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text="code": 200,</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:15]]></Time>
+<NodeArgs eType="General" icon="4" nRep="36" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T27">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Save Param]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>ParamName =<STRONG><FONT COLOR=#00AF00>token1</FONT></STRONG><BR>Left Boundary = <STRONG><FONT COLOR=#00AF00>LB="token": "</FONT></STRONG><BR>Right Boundary = <STRONG><FONT COLOR=#00AF00>RB="</FONT></STRONG><BR>Instance = <STRONG><FONT COLOR=#00AF00></FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:15]]></Time>
+<NodeArgs eType="General" icon="5" nRep="37" >
+<Disp><![CDATA[Service: Reg Save Param]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T28">
+<Obj plainTxt="False" ><![CDATA[Custom Request: web_custom_request]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:15]]></Time>
+<NodeArgs eType="General" icon="6" nRep="38" status="Passed" >
+<Disp><![CDATA[Custom Request: web_custom_request]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration4\t1.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T29">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text="code": 200,</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:15]]></Time>
+<NodeArgs eType="General" icon="4" nRep="39" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T30">
+<Obj plainTxt="False" ><![CDATA[Custom Request: web_custom_request]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:15]]></Time>
+<NodeArgs eType="General" icon="6" nRep="40" status="Passed" >
+<Disp><![CDATA[Custom Request: web_custom_request]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration4\t2.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Summary sTime="2019/11/28 - 22:13:15" eTime="2019/11/28 - 22:13:15" passed="2" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="35" status="Passed" >
+<Disp><![CDATA[Action Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="34" status="Passed" >
+<Disp><![CDATA[demo1 Iteration 4 (Row 4)]]></Disp>
+</NodeArgs>
+</DIter>
+<DIter rID="T31" iterID="5" >
+<Action rID="T32">
+<AName><![CDATA[Action]]></AName>
+<Step rID="T33">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text="code": 200,</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:16]]></Time>
+<NodeArgs eType="General" icon="4" nRep="45" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T34">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Save Param]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>ParamName =<STRONG><FONT COLOR=#00AF00>token1</FONT></STRONG><BR>Left Boundary = <STRONG><FONT COLOR=#00AF00>LB="token": "</FONT></STRONG><BR>Right Boundary = <STRONG><FONT COLOR=#00AF00>RB="</FONT></STRONG><BR>Instance = <STRONG><FONT COLOR=#00AF00></FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:16]]></Time>
+<NodeArgs eType="General" icon="5" nRep="46" >
+<Disp><![CDATA[Service: Reg Save Param]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T35">
+<Obj plainTxt="False" ><![CDATA[Custom Request: web_custom_request]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:16]]></Time>
+<NodeArgs eType="General" icon="6" nRep="47" status="Passed" >
+<Disp><![CDATA[Custom Request: web_custom_request]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration5\t1.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T36">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text="code": 200,</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:16]]></Time>
+<NodeArgs eType="General" icon="4" nRep="48" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T37">
+<Obj plainTxt="False" ><![CDATA[Custom Request: web_custom_request]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:16]]></Time>
+<NodeArgs eType="General" icon="6" nRep="49" status="Passed" >
+<Disp><![CDATA[Custom Request: web_custom_request]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration5\t2.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Summary sTime="2019/11/28 - 22:13:16" eTime="2019/11/28 - 22:13:16" passed="2" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="44" status="Passed" >
+<Disp><![CDATA[Action Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="43" status="Passed" >
+<Disp><![CDATA[demo1 Iteration 5 (Row 5)]]></Disp>
+</NodeArgs>
+</DIter>
+<DIter rID="T38" iterID="6" >
+<Action rID="T39">
+<AName><![CDATA[Action]]></AName>
+<Step rID="T40">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text="code": 200,</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:16]]></Time>
+<NodeArgs eType="General" icon="4" nRep="54" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T41">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Save Param]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>ParamName =<STRONG><FONT COLOR=#00AF00>token1</FONT></STRONG><BR>Left Boundary = <STRONG><FONT COLOR=#00AF00>LB="token": "</FONT></STRONG><BR>Right Boundary = <STRONG><FONT COLOR=#00AF00>RB="</FONT></STRONG><BR>Instance = <STRONG><FONT COLOR=#00AF00></FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:16]]></Time>
+<NodeArgs eType="General" icon="5" nRep="55" >
+<Disp><![CDATA[Service: Reg Save Param]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T42">
+<Obj plainTxt="False" ><![CDATA[Custom Request: web_custom_request]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:17]]></Time>
+<NodeArgs eType="General" icon="6" nRep="56" status="Passed" >
+<Disp><![CDATA[Custom Request: web_custom_request]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration6\t1.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T43">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text="code": 200,</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:17]]></Time>
+<NodeArgs eType="General" icon="4" nRep="57" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T44">
+<Obj plainTxt="False" ><![CDATA[Custom Request: web_custom_request]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:17]]></Time>
+<NodeArgs eType="General" icon="6" nRep="58" status="Passed" >
+<Disp><![CDATA[Custom Request: web_custom_request]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration6\t2.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Summary sTime="2019/11/28 - 22:13:16" eTime="2019/11/28 - 22:13:17" passed="2" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="53" status="Passed" >
+<Disp><![CDATA[Action Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="52" status="Passed" >
+<Disp><![CDATA[demo1 Iteration 6 (Row 6)]]></Disp>
+</NodeArgs>
+</DIter>
+<DIter rID="T45" iterID="7" >
+<Action rID="T46">
+<AName><![CDATA[Action]]></AName>
+<Step rID="T47">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text="code": 200,</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:17]]></Time>
+<NodeArgs eType="General" icon="4" nRep="63" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T48">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Save Param]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>ParamName =<STRONG><FONT COLOR=#00AF00>token1</FONT></STRONG><BR>Left Boundary = <STRONG><FONT COLOR=#00AF00>LB="token": "</FONT></STRONG><BR>Right Boundary = <STRONG><FONT COLOR=#00AF00>RB="</FONT></STRONG><BR>Instance = <STRONG><FONT COLOR=#00AF00></FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:17]]></Time>
+<NodeArgs eType="General" icon="5" nRep="64" >
+<Disp><![CDATA[Service: Reg Save Param]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T49">
+<Obj plainTxt="False" ><![CDATA[Custom Request: web_custom_request]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:18]]></Time>
+<NodeArgs eType="General" icon="6" nRep="65" status="Passed" >
+<Disp><![CDATA[Custom Request: web_custom_request]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration7\t1.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T50">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text="code": 200,</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:18]]></Time>
+<NodeArgs eType="General" icon="4" nRep="66" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T51">
+<Obj plainTxt="False" ><![CDATA[Custom Request: web_custom_request]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:18]]></Time>
+<NodeArgs eType="General" icon="6" nRep="67" status="Passed" >
+<Disp><![CDATA[Custom Request: web_custom_request]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration7\t2.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Summary sTime="2019/11/28 - 22:13:17" eTime="2019/11/28 - 22:13:18" passed="2" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="62" status="Passed" >
+<Disp><![CDATA[Action Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="61" status="Passed" >
+<Disp><![CDATA[demo1 Iteration 7 (Row 7)]]></Disp>
+</NodeArgs>
+</DIter>
+<DIter rID="T52" iterID="8" >
+<Action rID="T53">
+<AName><![CDATA[Action]]></AName>
+<Step rID="T54">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text="code": 200,</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:18]]></Time>
+<NodeArgs eType="General" icon="4" nRep="72" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T55">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Save Param]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>ParamName =<STRONG><FONT COLOR=#00AF00>token1</FONT></STRONG><BR>Left Boundary = <STRONG><FONT COLOR=#00AF00>LB="token": "</FONT></STRONG><BR>Right Boundary = <STRONG><FONT COLOR=#00AF00>RB="</FONT></STRONG><BR>Instance = <STRONG><FONT COLOR=#00AF00></FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:18]]></Time>
+<NodeArgs eType="General" icon="5" nRep="73" >
+<Disp><![CDATA[Service: Reg Save Param]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T56">
+<Obj plainTxt="False" ><![CDATA[Custom Request: web_custom_request]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:19]]></Time>
+<NodeArgs eType="General" icon="6" nRep="74" status="Passed" >
+<Disp><![CDATA[Custom Request: web_custom_request]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration8\t1.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T57">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text="code": 200,</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:19]]></Time>
+<NodeArgs eType="General" icon="4" nRep="75" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T58">
+<Obj plainTxt="False" ><![CDATA[Custom Request: web_custom_request]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:19]]></Time>
+<NodeArgs eType="General" icon="6" nRep="76" status="Passed" >
+<Disp><![CDATA[Custom Request: web_custom_request]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration8\t2.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Summary sTime="2019/11/28 - 22:13:18" eTime="2019/11/28 - 22:13:19" passed="2" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="71" status="Passed" >
+<Disp><![CDATA[Action Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="70" status="Passed" >
+<Disp><![CDATA[demo1 Iteration 8 (Row 8)]]></Disp>
+</NodeArgs>
+</DIter>
+<DIter rID="T59" iterID="9" >
+<Action rID="T60">
+<AName><![CDATA[Action]]></AName>
+<Step rID="T61">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text="code": 200,</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:19]]></Time>
+<NodeArgs eType="General" icon="4" nRep="81" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T62">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Save Param]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>ParamName =<STRONG><FONT COLOR=#00AF00>token1</FONT></STRONG><BR>Left Boundary = <STRONG><FONT COLOR=#00AF00>LB="token": "</FONT></STRONG><BR>Right Boundary = <STRONG><FONT COLOR=#00AF00>RB="</FONT></STRONG><BR>Instance = <STRONG><FONT COLOR=#00AF00></FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:19]]></Time>
+<NodeArgs eType="General" icon="5" nRep="82" >
+<Disp><![CDATA[Service: Reg Save Param]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T63">
+<Obj plainTxt="False" ><![CDATA[Custom Request: web_custom_request]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:20]]></Time>
+<NodeArgs eType="General" icon="6" nRep="83" status="Passed" >
+<Disp><![CDATA[Custom Request: web_custom_request]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration9\t1.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T64">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text="code": 200,</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:20]]></Time>
+<NodeArgs eType="General" icon="4" nRep="84" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T65">
+<Obj plainTxt="False" ><![CDATA[Custom Request: web_custom_request]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:20]]></Time>
+<NodeArgs eType="General" icon="6" nRep="85" status="Passed" >
+<Disp><![CDATA[Custom Request: web_custom_request]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration9\t2.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Summary sTime="2019/11/28 - 22:13:19" eTime="2019/11/28 - 22:13:20" passed="2" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="80" status="Passed" >
+<Disp><![CDATA[Action Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="79" status="Passed" >
+<Disp><![CDATA[demo1 Iteration 9 (Row 9)]]></Disp>
+</NodeArgs>
+</DIter>
+<DIter rID="T66" iterID="10" >
+<Action rID="T67">
+<AName><![CDATA[Action]]></AName>
+<Step rID="T68">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text="code": 200,</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:20]]></Time>
+<NodeArgs eType="General" icon="4" nRep="90" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T69">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Save Param]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>ParamName =<STRONG><FONT COLOR=#00AF00>token1</FONT></STRONG><BR>Left Boundary = <STRONG><FONT COLOR=#00AF00>LB="token": "</FONT></STRONG><BR>Right Boundary = <STRONG><FONT COLOR=#00AF00>RB="</FONT></STRONG><BR>Instance = <STRONG><FONT COLOR=#00AF00></FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:20]]></Time>
+<NodeArgs eType="General" icon="5" nRep="91" >
+<Disp><![CDATA[Service: Reg Save Param]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T70">
+<Obj plainTxt="False" ><![CDATA[Custom Request: web_custom_request]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:21]]></Time>
+<NodeArgs eType="General" icon="6" nRep="92" status="Passed" >
+<Disp><![CDATA[Custom Request: web_custom_request]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration10\t1.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T71">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text="code": 200,</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:21]]></Time>
+<NodeArgs eType="General" icon="4" nRep="93" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T72">
+<Obj plainTxt="False" ><![CDATA[Custom Request: web_custom_request]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2019/11/28 - 22:13:21]]></Time>
+<NodeArgs eType="General" icon="6" nRep="94" status="Passed" >
+<Disp><![CDATA[Custom Request: web_custom_request]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration10\t2.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Summary sTime="2019/11/28 - 22:13:20" eTime="2019/11/28 - 22:13:21" passed="2" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="89" status="Passed" >
+<Disp><![CDATA[Action Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="88" status="Passed" >
+<Disp><![CDATA[demo1 Iteration 10 (Row 10)]]></Disp>
+</NodeArgs>
+</DIter>
+<Action rID="T73">
+<AName><![CDATA[vuser_end]]></AName>
+<Summary sTime="2019/11/28 - 22:13:21" eTime="2019/11/28 - 22:13:21" passed="0" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="97" >
+<Disp><![CDATA[vuser_end Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Summary sTime="2019/11/28 - 22:13:12" eTime="2019/11/28 - 22:13:21" passed="20" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartTest" icon="1" nRep="4" status="Passed" >
+<Disp><![CDATA[Test demo1 Summary]]></Disp>
+</NodeArgs>
+</Doc>
+</Report>

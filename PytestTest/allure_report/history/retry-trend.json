@@ -1,0 +1,105 @@
+[ {
+  "buildOrder" : 17,
+  "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/17/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 3,
+    "retry" : 39
+  }
+}, {
+  "buildOrder" : 16,
+  "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/16/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 3,
+    "retry" : 36
+  }
+}, {
+  "buildOrder" : 15,
+  "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/15/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 3,
+    "retry" : 33
+  }
+}, {
+  "buildOrder" : 14,
+  "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/14/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 3,
+    "retry" : 30
+  }
+}, {
+  "buildOrder" : 13,
+  "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/13/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 3,
+    "retry" : 27
+  }
+}, {
+  "buildOrder" : 12,
+  "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/12/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 3,
+    "retry" : 24
+  }
+}, {
+  "buildOrder" : 11,
+  "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/11/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 3,
+    "retry" : 21
+  }
+}, {
+  "buildOrder" : 10,
+  "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/10/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 3,
+    "retry" : 18
+  }
+}, {
+  "buildOrder" : 9,
+  "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/9/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 3,
+    "retry" : 15
+  }
+}, {
+  "buildOrder" : 8,
+  "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/8/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 3,
+    "retry" : 12
+  }
+}, {
+  "buildOrder" : 7,
+  "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/7/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 3,
+    "retry" : 9
+  }
+}, {
+  "buildOrder" : 6,
+  "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/6/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 3,
+    "retry" : 6
+  }
+}, {
+  "buildOrder" : 5,
+  "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/5/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 3,
+    "retry" : 3
+  }
+} ]

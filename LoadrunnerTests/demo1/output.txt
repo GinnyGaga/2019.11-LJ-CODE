@@ -1,0 +1,1097 @@
+Virtual User Script started at : 2019-11-28 22:13:12
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 11.0.0 for WIN32; build 8859 (Aug 18 2010 20:14:31)  	[MsgId: MMSG-27143]
+Run Mode: HTML  	[MsgId: MMSG-26000]
+Run-Time Settings file: "C:\Users\SNake\VSCodeProjects\ljtest201910\LoadrunnerTests\demo1\\default.cfg"  	[MsgId: MMSG-27141]
+Vuser directory: "C:\Users\SNake\VSCodeProjects\ljtest201910\LoadrunnerTests\demo1"  	[MsgId: MMSG-27052]
+Vuser output directory: "C:\Users\SNake\VSCodeProjects\ljtest201910\LoadrunnerTests\demo1"  	[MsgId: MMSG-27050]
+Operating system's current working directory: "C:\Users\SNake\VSCodeProjects\ljtest201910\LoadrunnerTests\demo1"  	[MsgId: MMSG-27048]
+UTC (GMT) start date/time   : 2019-11-28 14:13:12  	[MsgId: MMSG-26000]
+LOCAL start date/time       : 2019-11-28 22:13:12  	[MsgId: MMSG-26000]
+Local daylight-Savings-Time : No  	[MsgId: MMSG-26000]
+Some of the Run-Time Settings:  	[MsgId: MMSG-27142]
+    Download non-HTML resources: Yes  	[MsgId: MMSG-26845]
+    Verification checks: No  	[MsgId: MMSG-26845]
+    Convert from/to UTF-8: No  	[MsgId: MMSG-26845]
+    Simulate a new user each iteration: Yes  	[MsgId: MMSG-26845]
+    Non-critical item errors as warnings: Yes  	[MsgId: MMSG-26845]
+    HTTP errors as warnings: No  	[MsgId: MMSG-26845]
+    WinInet replay instead of Sockets: No  	[MsgId: MMSG-26845]
+    HTTP version: 1.1  	[MsgId: MMSG-26845]
+    Keep-Alive HTTP connections: Yes  	[MsgId: MMSG-26845]
+    Max self Meta refresh updates: 2  	[MsgId: MMSG-26844]
+    No proxy is used (direct connection to the Internet)  	[MsgId: MMSG-27171]
+    DNS caching: Yes  	[MsgId: MMSG-26845]
+    Simulate browser cache: Yes  	[MsgId: MMSG-26845]
+        Cache URLs requiring content (e.g., HTMLs): Yes  	[MsgId: MMSG-26845]
+            Additional URLs requiring content: None  	[MsgId: MMSG-26845]
+        Check for newer versions every visit to the page: No  	[MsgId: MMSG-26845]
+    Page download timeout (sec): 120  	[MsgId: MMSG-26844]
+    Resource Page Timeout is a Warning: No  	[MsgId: MMSG-26845]
+    ContentCheck enabled: Yes  	[MsgId: MMSG-26845]
+    ContentCheck script-level file: "C:\Users\SNake\VSCodeProjects\ljtest201910\LoadrunnerTests\demo1\LrwiAedScript.xml"  	[MsgId: MMSG-26842]
+    Enable Web Page Breakdown: No  	[MsgId: MMSG-26845]
+    Enable connection data points: Yes  	[MsgId: MMSG-26845]
+    Process socket after reschedule: Yes  	[MsgId: MMSG-26845]
+    Snapshot on error: No  	[MsgId: MMSG-26845]
+    Define each step as a transaction: No  	[MsgId: MMSG-26845]
+    Read beyond Content-Length: No  	[MsgId: MMSG-26845]
+    Parse HTML Content-Type: TEXT  	[MsgId: MMSG-26845]
+    Graph hits per second and HTTP status codes: Yes  	[MsgId: MMSG-26845]
+    Graph response bytes per second: Yes  	[MsgId: MMSG-26845]
+    Graph pages per second: No  	[MsgId: MMSG-26845]
+    Web recorder version ID: 8  	[MsgId: MMSG-26844]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+Action.c(5): Rendezvous login
+Action.c(8): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(12): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(12): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(17): Notify: Transaction "µ«¬º" started.
+Action.c(19): web_custom_request("web_custom_request") started  	[MsgId: MMSG-26355]
+Action.c(19): Notify: Parameter Substitution: parameter "account" =  "test"
+Action.c(19): Notify: Parameter Substitution: parameter "password" =  "123456"
+Action.c(19): t=591ms: Connecting [0] to host 132.232.44.158:5000  	[MsgId: MMSG-26000]
+Action.c(19): t=605ms: Connected socket [0] from 192.168.1.105:9104 to 132.232.44.158:5000 in 9 ms  	[MsgId: MMSG-26000]
+Action.c(19): t=612ms: 262-byte request headers for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=1)
+Action.c(19):     POST /userLogin/ HTTP/1.1\r\n
+Action.c(19):     Content-Type: application/json\r\n
+Action.c(19):     Cache-Control: no-cache\r\n
+Action.c(19):     User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT)\r\n
+Action.c(19):     Accept-Encoding: gzip, deflate\r\n
+Action.c(19):     Accept: */*\r\n
+Action.c(19):     Connection: Keep-Alive\r\n
+Action.c(19):     Host: 132.232.44.158:5000\r\n
+Action.c(19):     Content-Length: 60\r\n
+Action.c(19):     \r\n
+Action.c(19): t=674ms: 60-byte request body for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=1)
+Action.c(19):     {"username":"test", "password":"123456", "captcha":"123456"}
+Action.c(19): t=746ms: 648-byte response headers for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=1)
+Action.c(19):     HTTP/1.1 200 OK\r\n
+Action.c(19):     Server: gunicorn/19.9.0\r\n
+Action.c(19):     Date: Thu, 28 Nov 2019 14:13:11 GMT\r\n
+Action.c(19):     Connection: keep-alive\r\n
+Action.c(19):     Content-Type: application/json\r\n
+Action.c(19):     Content-Length: 115\r\n
+Action.c(19):     Vary: Cookie\r\n
+Action.c(19):     Set-Cookie: session=.eJyVUVtywiAU3YrlW5xAg1W-_OhPV9G5DRgjCSQ8jNZxF91Ll9Rt9BKtnelfGRgO557Lf
+Action.c(19):     Z1JCtoTeSaglNchEEmiDpHMCdSaSM7npNJt2--cxSdhovhZKKm8hqif8aCJF2xFixL3jJWyZFKUKNEqVRAbZ1Hxi5H
+Action.c(19):     voGlvwTbDsKhch2yjiGR4dXWW80Icw66kYjSCsgNf0pM3gWoNcAz8jUMvFr2tyeTwcnW1TWUsdDmhYMFoNPYQwui8y
+Action.c(19):     unzx1IskfMY3xtk6qmE2Ta17QPyQR-R_Pr4zLipLcTkp7_uGPmIKEzRojM6V7ZOJ8MPo6Vqv3qnab8dKGztQLtB8Aa
+Action.c(19):     Yc3bF0TP16m-_BC3WM_Yky0Ly3NI8jlv-tzmMutpBvNdzuWpe_xX68g1E6Zhk.Xd_V9w.D8kwpaNAwvX77inYjMlH4
+Action.c(19):     HnGm5I; HttpOnly; Path=/\r\n
+Action.c(19):     \r\n
+Action.c(19): t=828ms: 115-byte response body for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=1)
+Action.c(19):     {\n
+Action.c(19):       "code": 200, \n
+Action.c(19):       "data": {\n
+Action.c(19):         "token": "9uyk2vwn-dj8z-ujfq-afnq-mq52ia1oon82"\n
+Action.c(19):       }, \n
+Action.c(19):       "msg": "ÁôªÂΩïÊàêÂäü!"\n
+Action.c(19):     }\n
+Action.c(19): Notify: Saving Parameter "token1 = 9uyk2vwn-dj8z-ujfq-afnq-mq52ia1oon82".
+Action.c(19): HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://132.232.44.158:5000/userLogin/"  	[MsgId: MMSG-26548]
+Action.c(19): t=873ms: Request done "http://132.232.44.158:5000/userLogin/"  	[MsgId: MMSG-26000]
+Action.c(19): Registered web_reg_find successful for "Text="code": 200," (count=1)  	[MsgId: MMSG-26364]
+Action.c(19): web_custom_request("web_custom_request") was successful, 115 body bytes, 648 header bytes  	[MsgId: MMSG-26386]
+Action.c(29): Notify: Transaction "µ«¬º" ended with "Pass" status (Duration: 0.8172 Wasted Time: 0.4911).
+Action.c(36): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(36): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(39): Notify: Transaction "ªÿ∏¥Œƒ’¬" started.
+Action.c(41): web_custom_request("web_custom_request") started  	[MsgId: MMSG-26355]
+Action.c(41): Notify: Parameter Substitution: parameter "token1" =  "9uyk2vwn-dj8z-ujfq-afnq-mq52ia1oon82"
+Action.c(41): t=1278ms: Already connected [0] to 132.232.44.158:5000  	[MsgId: MMSG-26000]
+Action.c(41): t=1284ms: 721-byte request headers for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=2)
+Action.c(41):     POST /articleComment/ HTTP/1.1\r\n
+Action.c(41):     Content-Type: application/json\r\n
+Action.c(41):     Cache-Control: no-cache\r\n
+Action.c(41):     User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT)\r\n
+Action.c(41):     Accept-Encoding: gzip, deflate\r\n
+Action.c(41):     Accept: */*\r\n
+Action.c(41):     Connection: Keep-Alive\r\n
+Action.c(41):     Host: 132.232.44.158:5000\r\n
+Action.c(41):     Cookie: session=.eJyVUVtywiAU3YrlW5xAg1W-_OhPV9G5DRgjCSQ8jNZxF91Ll9Rt9BKtnelfGRgO557LfZ1JC
+Action.c(41):     toTeSaglNchEEmiDpHMCdSaSM7npNJt2--cxSdhovhZKKm8hqif8aCJF2xFixL3jJWyZFKUKNEqVRAbZ1Hxi5HvoGl
+Action.c(41):     vwTbDsKhch2yjiGR4dXWW80Icw66kYjSCsgNf0pM3gWoNcAz8jUMvFr2tyeTwcnW1TWUsdDmhYMFoNPYQwui8yunzx
+Action.c(41):     1IskfMY3xtk6qmE2Ta17QPyQR-R_Pr4zLipLcTkp7_uGPmIKEzRojM6V7ZOJ8MPo6Vqv3qnab8dKGztQLtB8AaYc3b
+Action.c(41):     F0TP16m-_BC3WM_Yky0Ly3NI8jlv-tzmMutpBvNdzuWpe_xX68g1E6Zhk.Xd_V9w.D8kwpaNAwvX77inYjMlH4HnGm
+Action.c(41):     5I\r\n
+Action.c(41):     Content-Length: 80\r\n
+Action.c(41):     \r\n
+Action.c(41): t=1388ms: 80-byte request body for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=2)
+Action.c(41):     {"id":1, "content":"no reapte!","token": "9uyk2vwn-dj8z-ujfq-afnq-mq52ia1oon82"}
+Action.c(41): t=1412ms: 171-byte response headers for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=2)
+Action.c(41):     HTTP/1.1 200 OK\r\n
+Action.c(41):     Server: gunicorn/19.9.0\r\n
+Action.c(41):     Date: Thu, 28 Nov 2019 14:13:12 GMT\r\n
+Action.c(41):     Connection: keep-alive\r\n
+Action.c(41):     Content-Type: application/json\r\n
+Action.c(41):     Content-Length: 60\r\n
+Action.c(41):     Vary: Cookie\r\n
+Action.c(41):     \r\n
+Action.c(41): t=1460ms: 60-byte response body for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=2)
+Action.c(41):     {\n
+Action.c(41):       "code": 200, \n
+Action.c(41):       "data": {}, \n
+Action.c(41):       "msg": "ËØÑËÆ∫ÊàêÂäü!"\n
+Action.c(41):     }\n
+Action.c(41): HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://132.232.44.158:5000/articleComment/"  	[MsgId: MMSG-26548]
+Action.c(41): t=1492ms: Request done "http://132.232.44.158:5000/articleComment/"  	[MsgId: MMSG-26000]
+Action.c(41): Registered web_reg_find successful for "Text="code": 200," (count=1)  	[MsgId: MMSG-26364]
+Action.c(41): web_custom_request("web_custom_request") was successful, 60 body bytes, 171 header bytes  	[MsgId: MMSG-26386]
+Action.c(51): Notify: Transaction "ªÿ∏¥Œƒ’¬" ended with "Pass" status (Duration: 0.2701 Wasted Time: 0.0045).
+Ending action Action.
+Ending iteration 1.
+Starting iteration 2.
+t=1569ms: Closed connection [0] to 132.232.44.158:5000 after completing 2 requests  	[MsgId: MMSG-26000]
+Resetting all proxy auto-configuration information  	[MsgId: MMSG-26000]
+Notify: Next row for parameter password = 2 [table  = password].
+Notify: Getting new value for parameter 'password': table = 'account.dat' column = '1' row = '2'.
+Notify: Next row for parameter account = 2 [table  = account].
+Notify: Getting new value for parameter 'account': table = 'account.dat' column = '0' row = '2'.
+Starting action Action.
+Action.c(5): Rendezvous login
+Action.c(8): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(12): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(12): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(17): Notify: Transaction "µ«¬º" started.
+Action.c(19): web_custom_request("web_custom_request") started  	[MsgId: MMSG-26355]
+Action.c(19): Notify: Parameter Substitution: parameter "account" =  "test1"
+Action.c(19): Notify: Parameter Substitution: parameter "password" =  "123456"
+Action.c(19): t=1712ms: Connecting [0] to host 132.232.44.158:5000  	[MsgId: MMSG-26000]
+Action.c(19): t=1722ms: Connected socket [0] from 192.168.1.105:9105 to 132.232.44.158:5000 in 7 ms  	[MsgId: MMSG-26000]
+Action.c(19): t=1727ms: 262-byte request headers for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=3)
+Action.c(19):     POST /userLogin/ HTTP/1.1\r\n
+Action.c(19):     Content-Type: application/json\r\n
+Action.c(19):     Cache-Control: no-cache\r\n
+Action.c(19):     User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT)\r\n
+Action.c(19):     Accept-Encoding: gzip, deflate\r\n
+Action.c(19):     Accept: */*\r\n
+Action.c(19):     Connection: Keep-Alive\r\n
+Action.c(19):     Host: 132.232.44.158:5000\r\n
+Action.c(19):     Content-Length: 61\r\n
+Action.c(19):     \r\n
+Action.c(19): t=1770ms: 61-byte request body for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=3)
+Action.c(19):     {"username":"test1", "password":"123456", "captcha":"123456"}
+Action.c(19): t=1837ms: 547-byte response headers for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=3)
+Action.c(19):     HTTP/1.1 200 OK\r\n
+Action.c(19):     Server: gunicorn/19.9.0\r\n
+Action.c(19):     Date: Thu, 28 Nov 2019 14:13:12 GMT\r\n
+Action.c(19):     Connection: keep-alive\r\n
+Action.c(19):     Content-Type: application/json\r\n
+Action.c(19):     Content-Length: 115\r\n
+Action.c(19):     Vary: Cookie\r\n
+Action.c(19):     Set-Cookie: session=.eJyVUMtuwyAQ_JVqz0YKJPGDcy79iorAyrGMweEhokT5966F20NvPaB9zM7OLC_IEQPIF
+Action.c(19):     yhjAsYIEqABNSJIl61tQKO16807rIgOqBJe6FEtDrxnXDDRfvBWHjvJBY2gyVqlybvKwEVNtqaTAXkaKC7j3ljGT_O
+Action.c(19):     j5CY9O7VsixPGxAlfVYzFBxoBLo6nc0u9QAvDXPkRH3syjU6lHHaXMVFBt_AGkp9xc-KvQ28637EBS2H9dT6ze5kPL
+Action.c(19):     NxTK6LNuTwXYubV_N5XbW0f9MdWQX1TaZN6V_zrXyrvb8Zuc2U.Xd_V-A.fxHw5caK0pd3WUEg70c_Xy5mb_4; Htt
+Action.c(19):     pOnly; Path=/\r\n
+Action.c(19):     \r\n
+Action.c(19): t=1929ms: 115-byte response body for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=3)
+Action.c(19):     {\n
+Action.c(19):       "code": 200, \n
+Action.c(19):       "data": {\n
+Action.c(19):         "token": "ob98d7o7-9eww-8bk5-qwk0-rqt62sluuwzm"\n
+Action.c(19):       }, \n
+Action.c(19):       "msg": "ÁôªÂΩïÊàêÂäü!"\n
+Action.c(19):     }\n
+Action.c(19): Notify: Saving Parameter "token1 = ob98d7o7-9eww-8bk5-qwk0-rqt62sluuwzm".
+Action.c(19): HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://132.232.44.158:5000/userLogin/"  	[MsgId: MMSG-26548]
+Action.c(19): t=1963ms: Request done "http://132.232.44.158:5000/userLogin/"  	[MsgId: MMSG-26000]
+Action.c(19): Registered web_reg_find successful for "Text="code": 200," (count=1)  	[MsgId: MMSG-26364]
+Action.c(19): web_custom_request("web_custom_request") was successful, 115 body bytes, 547 header bytes  	[MsgId: MMSG-26386]
+Action.c(29): Notify: Transaction "µ«¬º" ended with "Pass" status (Duration: 0.3071 Wasted Time: 0.0053).
+Action.c(36): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(36): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(39): Notify: Transaction "ªÿ∏¥Œƒ’¬" started.
+Action.c(41): web_custom_request("web_custom_request") started  	[MsgId: MMSG-26355]
+Action.c(41): Notify: Parameter Substitution: parameter "token1" =  "ob98d7o7-9eww-8bk5-qwk0-rqt62sluuwzm"
+Action.c(41): t=2096ms: Already connected [0] to 132.232.44.158:5000  	[MsgId: MMSG-26000]
+Action.c(41): t=2106ms: 620-byte request headers for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=4)
+Action.c(41):     POST /articleComment/ HTTP/1.1\r\n
+Action.c(41):     Content-Type: application/json\r\n
+Action.c(41):     Cache-Control: no-cache\r\n
+Action.c(41):     User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT)\r\n
+Action.c(41):     Accept-Encoding: gzip, deflate\r\n
+Action.c(41):     Accept: */*\r\n
+Action.c(41):     Connection: Keep-Alive\r\n
+Action.c(41):     Host: 132.232.44.158:5000\r\n
+Action.c(41):     Cookie: session=.eJyVUMtuwyAQ_JVqz0YKJPGDcy79iorAyrGMweEhokT5966F20NvPaB9zM7OLC_IEQPIFyhjA
+Action.c(41):     sYIEqABNSJIl61tQKO16807rIgOqBJe6FEtDrxnXDDRfvBWHjvJBY2gyVqlybvKwEVNtqaTAXkaKC7j3ljGT_Oj5CY
+Action.c(41):     9O7VsixPGxAlfVYzFBxoBLo6nc0u9QAvDXPkRH3syjU6lHHaXMVFBt_AGkp9xc-KvQ28637EBS2H9dT6ze5kPLNxTK
+Action.c(41):     6LNuTwXYubV_N5XbW0f9MdWQX1TaZN6V_zrXyrvb8Zuc2U.Xd_V-A.fxHw5caK0pd3WUEg70c_Xy5mb_4\r\n
+Action.c(41):     Content-Length: 80\r\n
+Action.c(41):     \r\n
+Action.c(41): t=2173ms: 80-byte request body for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=4)
+Action.c(41):     {"id":1, "content":"no reapte!","token": "ob98d7o7-9eww-8bk5-qwk0-rqt62sluuwzm"}
+Action.c(41): t=2194ms: 171-byte response headers for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=4)
+Action.c(41):     HTTP/1.1 200 OK\r\n
+Action.c(41):     Server: gunicorn/19.9.0\r\n
+Action.c(41):     Date: Thu, 28 Nov 2019 14:13:12 GMT\r\n
+Action.c(41):     Connection: keep-alive\r\n
+Action.c(41):     Content-Type: application/json\r\n
+Action.c(41):     Content-Length: 60\r\n
+Action.c(41):     Vary: Cookie\r\n
+Action.c(41):     \r\n
+Action.c(41): t=2239ms: 60-byte response body for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=4)
+Action.c(41):     {\n
+Action.c(41):       "code": 200, \n
+Action.c(41):       "data": {}, \n
+Action.c(41):       "msg": "ËØÑËÆ∫ÊàêÂäü!"\n
+Action.c(41):     }\n
+Action.c(41): HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://132.232.44.158:5000/articleComment/"  	[MsgId: MMSG-26548]
+Action.c(41): t=2267ms: Request done "http://132.232.44.158:5000/articleComment/"  	[MsgId: MMSG-26000]
+Action.c(41): Registered web_reg_find successful for "Text="code": 200," (count=1)  	[MsgId: MMSG-26364]
+Action.c(41): web_custom_request("web_custom_request") was successful, 60 body bytes, 171 header bytes  	[MsgId: MMSG-26386]
+Action.c(51): Notify: Transaction "ªÿ∏¥Œƒ’¬" ended with "Pass" status (Duration: 0.2345 Wasted Time: 0.0012).
+Ending action Action.
+Ending iteration 2.
+Starting iteration 3.
+t=2365ms: Closed connection [0] to 132.232.44.158:5000 after completing 2 requests  	[MsgId: MMSG-26000]
+Resetting all proxy auto-configuration information  	[MsgId: MMSG-26000]
+Notify: Next row for parameter password = 3 [table  = password].
+Notify: Getting new value for parameter 'password': table = 'account.dat' column = '1' row = '3'.
+Notify: Next row for parameter account = 3 [table  = account].
+Notify: Getting new value for parameter 'account': table = 'account.dat' column = '0' row = '3'.
+Starting action Action.
+Action.c(5): Rendezvous login
+Action.c(8): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(12): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(12): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(17): Notify: Transaction "µ«¬º" started.
+Action.c(19): web_custom_request("web_custom_request") started  	[MsgId: MMSG-26355]
+Action.c(19): Notify: Parameter Substitution: parameter "account" =  "test2"
+Action.c(19): Notify: Parameter Substitution: parameter "password" =  "123456"
+Action.c(19): t=2511ms: Connecting [0] to host 132.232.44.158:5000  	[MsgId: MMSG-26000]
+Action.c(19): t=2523ms: Connected socket [0] from 192.168.1.105:9108 to 132.232.44.158:5000 in 9 ms  	[MsgId: MMSG-26000]
+Action.c(19): t=2526ms: 262-byte request headers for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=5)
+Action.c(19):     POST /userLogin/ HTTP/1.1\r\n
+Action.c(19):     Content-Type: application/json\r\n
+Action.c(19):     Cache-Control: no-cache\r\n
+Action.c(19):     User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT)\r\n
+Action.c(19):     Accept-Encoding: gzip, deflate\r\n
+Action.c(19):     Accept: */*\r\n
+Action.c(19):     Connection: Keep-Alive\r\n
+Action.c(19):     Host: 132.232.44.158:5000\r\n
+Action.c(19):     Content-Length: 61\r\n
+Action.c(19):     \r\n
+Action.c(19): t=2569ms: 61-byte request body for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=5)
+Action.c(19):     {"username":"test2", "password":"123456", "captcha":"123456"}
+Action.c(19): t=2635ms: 544-byte response headers for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=5)
+Action.c(19):     HTTP/1.1 200 OK\r\n
+Action.c(19):     Server: gunicorn/19.9.0\r\n
+Action.c(19):     Date: Thu, 28 Nov 2019 14:13:13 GMT\r\n
+Action.c(19):     Connection: keep-alive\r\n
+Action.c(19):     Content-Type: application/json\r\n
+Action.c(19):     Content-Length: 115\r\n
+Action.c(19):     Vary: Cookie\r\n
+Action.c(19):     Set-Cookie: session=.eJyVUMluwyAQ_ZVqzkYqOLZTzrn0KyoEU4KMMWKxo0T594Bwe-itBzTrW4YH5IgB-AOEU
+Action.c(19):     gFjBA7QgdAI3GVrO5Borb-uDttEBhQJL-WVmr3TM6GMsPGNjryfOGVlBVWWIpnVNQQuwtiWGgX81Je46KOx6E_1o-S
+Action.c(19):     MnJ1YKnHCmCqVFzHuaygrQFl_GsbSC4UwzA0f8XYkRjuRcjhcxlSKcgvtIK0zViff57vu08dGzDbdyeaGSNKoPRkmj
+Action.c(19):     Ivz-0aZKsjs1e99zVb9oD-2dpRXkarUs82__qXyfAHdW3Nn.Xd_V-Q.CIS68kdPkZkDQL4o5Cwkwg07sZ0; HttpOn
+Action.c(19):     ly; Path=/\r\n
+Action.c(19):     \r\n
+Action.c(19): t=2720ms: 115-byte response body for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=5)
+Action.c(19):     {\n
+Action.c(19):       "code": 200, \n
+Action.c(19):       "data": {\n
+Action.c(19):         "token": "f8zg3t9v-iv7z-vn5s-t6gp-57esmnpwv12d"\n
+Action.c(19):       }, \n
+Action.c(19):       "msg": "ÁôªÂΩïÊàêÂäü!"\n
+Action.c(19):     }\n
+Action.c(19): Notify: Saving Parameter "token1 = f8zg3t9v-iv7z-vn5s-t6gp-57esmnpwv12d".
+Action.c(19): HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://132.232.44.158:5000/userLogin/"  	[MsgId: MMSG-26548]
+Action.c(19): t=2756ms: Request done "http://132.232.44.158:5000/userLogin/"  	[MsgId: MMSG-26000]
+Action.c(19): Registered web_reg_find successful for "Text="code": 200," (count=1)  	[MsgId: MMSG-26364]
+Action.c(19): web_custom_request("web_custom_request") was successful, 115 body bytes, 544 header bytes  	[MsgId: MMSG-26386]
+Action.c(29): Notify: Transaction "µ«¬º" ended with "Pass" status (Duration: 0.2876 Wasted Time: 0.0048).
+Action.c(36): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(36): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(39): Notify: Transaction "ªÿ∏¥Œƒ’¬" started.
+Action.c(41): web_custom_request("web_custom_request") started  	[MsgId: MMSG-26355]
+Action.c(41): Notify: Parameter Substitution: parameter "token1" =  "f8zg3t9v-iv7z-vn5s-t6gp-57esmnpwv12d"
+Action.c(41): t=2846ms: Already connected [0] to 132.232.44.158:5000  	[MsgId: MMSG-26000]
+Action.c(41): t=2854ms: 617-byte request headers for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=6)
+Action.c(41):     POST /articleComment/ HTTP/1.1\r\n
+Action.c(41):     Content-Type: application/json\r\n
+Action.c(41):     Cache-Control: no-cache\r\n
+Action.c(41):     User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT)\r\n
+Action.c(41):     Accept-Encoding: gzip, deflate\r\n
+Action.c(41):     Accept: */*\r\n
+Action.c(41):     Connection: Keep-Alive\r\n
+Action.c(41):     Host: 132.232.44.158:5000\r\n
+Action.c(41):     Cookie: session=.eJyVUMluwyAQ_ZVqzkYqOLZTzrn0KyoEU4KMMWKxo0T594Bwe-itBzTrW4YH5IgB-AOEUgFjB
+Action.c(41):     A7QgdAI3GVrO5Borb-uDttEBhQJL-WVmr3TM6GMsPGNjryfOGVlBVWWIpnVNQQuwtiWGgX81Je46KOx6E_1o-SMnJ1
+Action.c(41):     YKnHCmCqVFzHuaygrQFl_GsbSC4UwzA0f8XYkRjuRcjhcxlSKcgvtIK0zViff57vu08dGzDbdyeaGSNKoPRkmjIvz-
+Action.c(41):     0aZKsjs1e99zVb9oD-2dpRXkarUs82__qXyfAHdW3Nn.Xd_V-Q.CIS68kdPkZkDQL4o5Cwkwg07sZ0\r\n
+Action.c(41):     Content-Length: 80\r\n
+Action.c(41):     \r\n
+Action.c(41): t=2934ms: 80-byte request body for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=6)
+Action.c(41):     {"id":1, "content":"no reapte!","token": "f8zg3t9v-iv7z-vn5s-t6gp-57esmnpwv12d"}
+Action.c(41): t=2956ms: 171-byte response headers for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=6)
+Action.c(41):     HTTP/1.1 200 OK\r\n
+Action.c(41):     Server: gunicorn/19.9.0\r\n
+Action.c(41):     Date: Thu, 28 Nov 2019 14:13:13 GMT\r\n
+Action.c(41):     Connection: keep-alive\r\n
+Action.c(41):     Content-Type: application/json\r\n
+Action.c(41):     Content-Length: 60\r\n
+Action.c(41):     Vary: Cookie\r\n
+Action.c(41):     \r\n
+Action.c(41): t=3010ms: 60-byte response body for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=6)
+Action.c(41):     {\n
+Action.c(41):       "code": 200, \n
+Action.c(41):       "data": {}, \n
+Action.c(41):       "msg": "ËØÑËÆ∫ÊàêÂäü!"\n
+Action.c(41):     }\n
+Action.c(41): HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://132.232.44.158:5000/articleComment/"  	[MsgId: MMSG-26548]
+Action.c(41): t=3041ms: Request done "http://132.232.44.158:5000/articleComment/"  	[MsgId: MMSG-26000]
+Action.c(41): Registered web_reg_find successful for "Text="code": 200," (count=1)  	[MsgId: MMSG-26364]
+Action.c(41): web_custom_request("web_custom_request") was successful, 60 body bytes, 171 header bytes  	[MsgId: MMSG-26386]
+Action.c(51): Notify: Transaction "ªÿ∏¥Œƒ’¬" ended with "Pass" status (Duration: 0.2408 Wasted Time: 0.0013).
+Ending action Action.
+Ending iteration 3.
+Starting iteration 4.
+t=3114ms: Closed connection [0] to 132.232.44.158:5000 after completing 2 requests  	[MsgId: MMSG-26000]
+Resetting all proxy auto-configuration information  	[MsgId: MMSG-26000]
+Notify: Next row for parameter password = 4 [table  = password].
+Notify: Getting new value for parameter 'password': table = 'account.dat' column = '1' row = '4'.
+Notify: Next row for parameter account = 4 [table  = account].
+Notify: Getting new value for parameter 'account': table = 'account.dat' column = '0' row = '4'.
+Starting action Action.
+Action.c(5): Rendezvous login
+Action.c(8): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(12): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(12): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(17): Notify: Transaction "µ«¬º" started.
+Action.c(19): web_custom_request("web_custom_request") started  	[MsgId: MMSG-26355]
+Action.c(19): Notify: Parameter Substitution: parameter "account" =  "test3"
+Action.c(19): Notify: Parameter Substitution: parameter "password" =  "123456"
+Action.c(19): t=3241ms: Connecting [0] to host 132.232.44.158:5000  	[MsgId: MMSG-26000]
+Action.c(19): t=3251ms: Connected socket [0] from 192.168.1.105:9109 to 132.232.44.158:5000 in 6 ms  	[MsgId: MMSG-26000]
+Action.c(19): t=3255ms: 262-byte request headers for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=7)
+Action.c(19):     POST /userLogin/ HTTP/1.1\r\n
+Action.c(19):     Content-Type: application/json\r\n
+Action.c(19):     Cache-Control: no-cache\r\n
+Action.c(19):     User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT)\r\n
+Action.c(19):     Accept-Encoding: gzip, deflate\r\n
+Action.c(19):     Accept: */*\r\n
+Action.c(19):     Connection: Keep-Alive\r\n
+Action.c(19):     Host: 132.232.44.158:5000\r\n
+Action.c(19):     Content-Length: 61\r\n
+Action.c(19):     \r\n
+Action.c(19): t=3299ms: 61-byte request body for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=7)
+Action.c(19):     {"username":"test3", "password":"123456", "captcha":"123456"}
+Action.c(19): t=3375ms: 547-byte response headers for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=7)
+Action.c(19):     HTTP/1.1 200 OK\r\n
+Action.c(19):     Server: gunicorn/19.9.0\r\n
+Action.c(19):     Date: Thu, 28 Nov 2019 14:13:14 GMT\r\n
+Action.c(19):     Connection: keep-alive\r\n
+Action.c(19):     Content-Type: application/json\r\n
+Action.c(19):     Content-Length: 115\r\n
+Action.c(19):     Vary: Cookie\r\n
+Action.c(19):     Set-Cookie: session=.eJyVUMtuwyAQ_JVqz0YyOCEV5176FRWClUONMeVhR4ny710Lt4feekD7mJ2dWR5QMyZQD
+Action.c(19):     9DWJswZFEAHekRQoXrfgUHv43UJ2BCTUBd8o0e16Pkr44IJ-cKlGi6KCxpBW40ubgmNgbN2vqXOgjpJivN4NObx3f4
+Action.c(19):     oBWemoOd9ccFcBsKjznlbEo0AF8PpLKmXaGGaGj_j7UjcGHSp6XCZCxV0C--gLBPuTtYq0d_6wu6aG7bW-4X5ZY3sv
+Action.c(19):     PXj5xTNV5CGmDXa3_uarf2D_tja0Fx12aWeDf_4l8rzGy6IdHw.Xd_V-g.CCq3YlIkMqyY8sp_Xo1Fa2G57qA; Htt
+Action.c(19):     pOnly; Path=/\r\n
+Action.c(19):     \r\n
+Action.c(19): t=3471ms: 115-byte response body for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=7)
+Action.c(19):     {\n
+Action.c(19):       "code": 200, \n
+Action.c(19):       "data": {\n
+Action.c(19):         "token": "vu6elx0t-za1c-vuz7-lovp-5w0gjkpcqn6c"\n
+Action.c(19):       }, \n
+Action.c(19):       "msg": "ÁôªÂΩïÊàêÂäü!"\n
+Action.c(19):     }\n
+Action.c(19): Notify: Saving Parameter "token1 = vu6elx0t-za1c-vuz7-lovp-5w0gjkpcqn6c".
+Action.c(19): HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://132.232.44.158:5000/userLogin/"  	[MsgId: MMSG-26548]
+Action.c(19): t=3512ms: Request done "http://132.232.44.158:5000/userLogin/"  	[MsgId: MMSG-26000]
+Action.c(19): Registered web_reg_find successful for "Text="code": 200," (count=1)  	[MsgId: MMSG-26364]
+Action.c(19): web_custom_request("web_custom_request") was successful, 115 body bytes, 547 header bytes  	[MsgId: MMSG-26386]
+Action.c(29): Notify: Transaction "µ«¬º" ended with "Pass" status (Duration: 0.3129 Wasted Time: 0.0057).
+Action.c(36): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(36): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(39): Notify: Transaction "ªÿ∏¥Œƒ’¬" started.
+Action.c(41): web_custom_request("web_custom_request") started  	[MsgId: MMSG-26355]
+Action.c(41): Notify: Parameter Substitution: parameter "token1" =  "vu6elx0t-za1c-vuz7-lovp-5w0gjkpcqn6c"
+Action.c(41): t=3600ms: Already connected [0] to 132.232.44.158:5000  	[MsgId: MMSG-26000]
+Action.c(41): t=3608ms: 620-byte request headers for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=8)
+Action.c(41):     POST /articleComment/ HTTP/1.1\r\n
+Action.c(41):     Content-Type: application/json\r\n
+Action.c(41):     Cache-Control: no-cache\r\n
+Action.c(41):     User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT)\r\n
+Action.c(41):     Accept-Encoding: gzip, deflate\r\n
+Action.c(41):     Accept: */*\r\n
+Action.c(41):     Connection: Keep-Alive\r\n
+Action.c(41):     Host: 132.232.44.158:5000\r\n
+Action.c(41):     Cookie: session=.eJyVUMtuwyAQ_JVqz0YyOCEV5176FRWClUONMeVhR4ny710Lt4feekD7mJ2dWR5QMyZQD9DWJ
+Action.c(41):     swZFEAHekRQoXrfgUHv43UJ2BCTUBd8o0e16Pkr44IJ-cKlGi6KCxpBW40ubgmNgbN2vqXOgjpJivN4NObx3f4oBWe
+Action.c(41):     moOd9ccFcBsKjznlbEo0AF8PpLKmXaGGaGj_j7UjcGHSp6XCZCxV0C--gLBPuTtYq0d_6wu6aG7bW-4X5ZY3svPXj5
+Action.c(41):     xTNV5CGmDXa3_uarf2D_tja0Fx12aWeDf_4l8rzGy6IdHw.Xd_V-g.CCq3YlIkMqyY8sp_Xo1Fa2G57qA\r\n
+Action.c(41):     Content-Length: 80\r\n
+Action.c(41):     \r\n
+Action.c(41): t=3690ms: 80-byte request body for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=8)
+Action.c(41):     {"id":1, "content":"no reapte!","token": "vu6elx0t-za1c-vuz7-lovp-5w0gjkpcqn6c"}
+Action.c(41): t=3713ms: 171-byte response headers for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=8)
+Action.c(41):     HTTP/1.1 200 OK\r\n
+Action.c(41):     Server: gunicorn/19.9.0\r\n
+Action.c(41):     Date: Thu, 28 Nov 2019 14:13:14 GMT\r\n
+Action.c(41):     Connection: keep-alive\r\n
+Action.c(41):     Content-Type: application/json\r\n
+Action.c(41):     Content-Length: 60\r\n
+Action.c(41):     Vary: Cookie\r\n
+Action.c(41):     \r\n
+Action.c(41): t=3774ms: 60-byte response body for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=8)
+Action.c(41):     {\n
+Action.c(41):       "code": 200, \n
+Action.c(41):       "data": {}, \n
+Action.c(41):       "msg": "ËØÑËÆ∫ÊàêÂäü!"\n
+Action.c(41):     }\n
+Action.c(41): HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://132.232.44.158:5000/articleComment/"  	[MsgId: MMSG-26548]
+Action.c(41): t=3828ms: Request done "http://132.232.44.158:5000/articleComment/"  	[MsgId: MMSG-26000]
+Action.c(41): Registered web_reg_find successful for "Text="code": 200," (count=1)  	[MsgId: MMSG-26364]
+Action.c(41): web_custom_request("web_custom_request") was successful, 60 body bytes, 171 header bytes  	[MsgId: MMSG-26386]
+Action.c(51): Notify: Transaction "ªÿ∏¥Œƒ’¬" ended with "Pass" status (Duration: 0.2870 Wasted Time: 0.0013).
+Ending action Action.
+Ending iteration 4.
+Starting iteration 5.
+t=3950ms: Closed connection [0] to 132.232.44.158:5000 after completing 2 requests  	[MsgId: MMSG-26000]
+Resetting all proxy auto-configuration information  	[MsgId: MMSG-26000]
+Notify: Next row for parameter password = 5 [table  = password].
+Notify: Getting new value for parameter 'password': table = 'account.dat' column = '1' row = '5'.
+Notify: Next row for parameter account = 5 [table  = account].
+Notify: Getting new value for parameter 'account': table = 'account.dat' column = '0' row = '5'.
+Starting action Action.
+Action.c(5): Rendezvous login
+Action.c(8): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(12): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(12): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(17): Notify: Transaction "µ«¬º" started.
+Action.c(19): web_custom_request("web_custom_request") started  	[MsgId: MMSG-26355]
+Action.c(19): Notify: Parameter Substitution: parameter "account" =  "test4"
+Action.c(19): Notify: Parameter Substitution: parameter "password" =  "123456"
+Action.c(19): t=4102ms: Connecting [0] to host 132.232.44.158:5000  	[MsgId: MMSG-26000]
+Action.c(19): t=4115ms: Connected socket [0] from 192.168.1.105:9110 to 132.232.44.158:5000 in 6 ms  	[MsgId: MMSG-26000]
+Action.c(19): t=4121ms: 262-byte request headers for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=9)
+Action.c(19):     POST /userLogin/ HTTP/1.1\r\n
+Action.c(19):     Content-Type: application/json\r\n
+Action.c(19):     Cache-Control: no-cache\r\n
+Action.c(19):     User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT)\r\n
+Action.c(19):     Accept-Encoding: gzip, deflate\r\n
+Action.c(19):     Accept: */*\r\n
+Action.c(19):     Connection: Keep-Alive\r\n
+Action.c(19):     Host: 132.232.44.158:5000\r\n
+Action.c(19):     Content-Length: 61\r\n
+Action.c(19):     \r\n
+Action.c(19): t=4169ms: 61-byte request body for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=9)
+Action.c(19):     {"username":"test4", "password":"123456", "captcha":"123456"}
+Action.c(19): t=4234ms: 547-byte response headers for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=9)
+Action.c(19):     HTTP/1.1 200 OK\r\n
+Action.c(19):     Server: gunicorn/19.9.0\r\n
+Action.c(19):     Date: Thu, 28 Nov 2019 14:13:14 GMT\r\n
+Action.c(19):     Connection: keep-alive\r\n
+Action.c(19):     Content-Type: application/json\r\n
+Action.c(19):     Content-Length: 115\r\n
+Action.c(19):     Vary: Cookie\r\n
+Action.c(19):     Set-Cookie: session=.eJyVULtuwzAM_JWCswVEtuo0mrP0KwrGIhTBtmToAdcN8u-lIbdDtw4CH8fjHfWAkiiCf
+Action.c(19):     gAaEykl0AANoCXQvkxTAwNN03IPnioyRMJMV35ctyf5JmQr2v5F9ro7a9nyCJkyYHbBVwbN6KaaOgNanTnO9mjM9t3
+Action.c(19):     8KHk3jB7nfXGmlBXjC6a0hsgjINtOvfbci7wwjpWf6PNInPWYSzxcpswF3yIbyGGk3Uk6Zbd9bVGoZG7CrPYipB1vw
+Action.c(19):     m0Bi8IOL2FmZlnM733V1v5Bf2ytNNwx71LPin_8S-X5DSGodCU.Xd_V-g.xBIQAvB-cN_rmGQm4KD8PW_muEQ; Htt
+Action.c(19):     pOnly; Path=/\r\n
+Action.c(19):     \r\n
+Action.c(19): t=4317ms: 115-byte response body for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=9)
+Action.c(19):     {\n
+Action.c(19):       "code": 200, \n
+Action.c(19):       "data": {\n
+Action.c(19):         "token": "s0tiyzyr-4sdb-dwg9-1gkb-iyoau4a3a9om"\n
+Action.c(19):       }, \n
+Action.c(19):       "msg": "ÁôªÂΩïÊàêÂäü!"\n
+Action.c(19):     }\n
+Action.c(19): Notify: Saving Parameter "token1 = s0tiyzyr-4sdb-dwg9-1gkb-iyoau4a3a9om".
+Action.c(19): HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://132.232.44.158:5000/userLogin/"  	[MsgId: MMSG-26548]
+Action.c(19): t=4359ms: Request done "http://132.232.44.158:5000/userLogin/"  	[MsgId: MMSG-26000]
+Action.c(19): Registered web_reg_find successful for "Text="code": 200," (count=1)  	[MsgId: MMSG-26364]
+Action.c(19): web_custom_request("web_custom_request") was successful, 115 body bytes, 547 header bytes  	[MsgId: MMSG-26386]
+Action.c(29): Notify: Transaction "µ«¬º" ended with "Pass" status (Duration: 0.3158 Wasted Time: 0.0066).
+Action.c(36): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(36): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(39): Notify: Transaction "ªÿ∏¥Œƒ’¬" started.
+Action.c(41): web_custom_request("web_custom_request") started  	[MsgId: MMSG-26355]
+Action.c(41): Notify: Parameter Substitution: parameter "token1" =  "s0tiyzyr-4sdb-dwg9-1gkb-iyoau4a3a9om"
+Action.c(41): t=4456ms: Already connected [0] to 132.232.44.158:5000  	[MsgId: MMSG-26000]
+Action.c(41): t=4460ms: 620-byte request headers for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=10)
+Action.c(41):     POST /articleComment/ HTTP/1.1\r\n
+Action.c(41):     Content-Type: application/json\r\n
+Action.c(41):     Cache-Control: no-cache\r\n
+Action.c(41):     User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT)\r\n
+Action.c(41):     Accept-Encoding: gzip, deflate\r\n
+Action.c(41):     Accept: */*\r\n
+Action.c(41):     Connection: Keep-Alive\r\n
+Action.c(41):     Host: 132.232.44.158:5000\r\n
+Action.c(41):     Cookie: session=.eJyVULtuwzAM_JWCswVEtuo0mrP0KwrGIhTBtmToAdcN8u-lIbdDtw4CH8fjHfWAkiiCfgAaE
+Action.c(41):     ykl0AANoCXQvkxTAwNN03IPnioyRMJMV35ctyf5JmQr2v5F9ro7a9nyCJkyYHbBVwbN6KaaOgNanTnO9mjM9t38KHk
+Action.c(41):     3jB7nfXGmlBXjC6a0hsgjINtOvfbci7wwjpWf6PNInPWYSzxcpswF3yIbyGGk3Uk6Zbd9bVGoZG7CrPYipB1vwm0Bi
+Action.c(41):     8IOL2FmZlnM733V1v5Bf2ytNNwx71LPin_8S-X5DSGodCU.Xd_V-g.xBIQAvB-cN_rmGQm4KD8PW_muEQ\r\n
+Action.c(41):     Content-Length: 80\r\n
+Action.c(41):     \r\n
+Action.c(41): t=4538ms: 80-byte request body for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=10)
+Action.c(41):     {"id":1, "content":"no reapte!","token": "s0tiyzyr-4sdb-dwg9-1gkb-iyoau4a3a9om"}
+Action.c(41): t=4576ms: 171-byte response headers for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=10)
+Action.c(41):     HTTP/1.1 200 OK\r\n
+Action.c(41):     Server: gunicorn/19.9.0\r\n
+Action.c(41):     Date: Thu, 28 Nov 2019 14:13:15 GMT\r\n
+Action.c(41):     Connection: keep-alive\r\n
+Action.c(41):     Content-Type: application/json\r\n
+Action.c(41):     Content-Length: 60\r\n
+Action.c(41):     Vary: Cookie\r\n
+Action.c(41):     \r\n
+Action.c(41): t=4640ms: 60-byte response body for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=10)
+Action.c(41):     {\n
+Action.c(41):       "code": 200, \n
+Action.c(41):       "data": {}, \n
+Action.c(41):       "msg": "ËØÑËÆ∫ÊàêÂäü!"\n
+Action.c(41):     }\n
+Action.c(41): HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://132.232.44.158:5000/articleComment/"  	[MsgId: MMSG-26548]
+Action.c(41): t=4676ms: Request done "http://132.232.44.158:5000/articleComment/"  	[MsgId: MMSG-26000]
+Action.c(41): Registered web_reg_find successful for "Text="code": 200," (count=1)  	[MsgId: MMSG-26364]
+Action.c(41): web_custom_request("web_custom_request") was successful, 60 body bytes, 171 header bytes  	[MsgId: MMSG-26386]
+Action.c(51): Notify: Transaction "ªÿ∏¥Œƒ’¬" ended with "Pass" status (Duration: 0.2749 Wasted Time: 0.0018).
+Ending action Action.
+Ending iteration 5.
+Starting iteration 6.
+t=4740ms: Closed connection [0] to 132.232.44.158:5000 after completing 2 requests  	[MsgId: MMSG-26000]
+Resetting all proxy auto-configuration information  	[MsgId: MMSG-26000]
+Notify: Next row for parameter password = 6 [table  = password].
+Notify: Getting new value for parameter 'password': table = 'account.dat' column = '1' row = '6'.
+Notify: Next row for parameter account = 6 [table  = account].
+Notify: Getting new value for parameter 'account': table = 'account.dat' column = '0' row = '6'.
+Starting action Action.
+Action.c(5): Rendezvous login
+Action.c(8): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(12): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(12): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(17): Notify: Transaction "µ«¬º" started.
+Action.c(19): web_custom_request("web_custom_request") started  	[MsgId: MMSG-26355]
+Action.c(19): Notify: Parameter Substitution: parameter "account" =  "test5"
+Action.c(19): Notify: Parameter Substitution: parameter "password" =  "123456"
+Action.c(19): t=4954ms: Connecting [0] to host 132.232.44.158:5000  	[MsgId: MMSG-26000]
+Action.c(19): t=4964ms: Connected socket [0] from 192.168.1.105:9111 to 132.232.44.158:5000 in 7 ms  	[MsgId: MMSG-26000]
+Action.c(19): t=4969ms: 262-byte request headers for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=11)
+Action.c(19):     POST /userLogin/ HTTP/1.1\r\n
+Action.c(19):     Content-Type: application/json\r\n
+Action.c(19):     Cache-Control: no-cache\r\n
+Action.c(19):     User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT)\r\n
+Action.c(19):     Accept-Encoding: gzip, deflate\r\n
+Action.c(19):     Accept: */*\r\n
+Action.c(19):     Connection: Keep-Alive\r\n
+Action.c(19):     Host: 132.232.44.158:5000\r\n
+Action.c(19):     Content-Length: 61\r\n
+Action.c(19):     \r\n
+Action.c(19): t=5013ms: 61-byte request body for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=11)
+Action.c(19):     {"username":"test5", "password":"123456", "captcha":"123456"}
+Action.c(19): t=5088ms: 546-byte response headers for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=11)
+Action.c(19):     HTTP/1.1 200 OK\r\n
+Action.c(19):     Server: gunicorn/19.9.0\r\n
+Action.c(19):     Date: Thu, 28 Nov 2019 14:13:15 GMT\r\n
+Action.c(19):     Connection: keep-alive\r\n
+Action.c(19):     Content-Type: application/json\r\n
+Action.c(19):     Content-Length: 115\r\n
+Action.c(19):     Vary: Cookie\r\n
+Action.c(19):     Set-Cookie: session=.eJyVUMtuwyAQ_JVqz0EqxI-Ucy79iorABlNjsHgokaL8e9bC7aG3HtA-ZmdnlgfUjAnkA
+Action.c(19):     5QxCXMGCXAAZRFkqN4fQKP36xQDNkQnVAXP9KgW7_zEuGBieOODPI6SCxpBU7UqLobGwEU531JnQPac4mL3xmI_zY9
+Action.c(19):     ScHoOatkWF8ylJ3xVOd9iohHg4tj1A_USLUxz42e874mzQZWadpe5UEG3kFaJM25ObMLhMmrP6tWPbDqVgXXf6cpm5
+Action.c(19):     T9i1Ovdrh0x62p-72u2tg_6Y-uGelJlk3o2_OtfKs8X3XxzgA.Xd_V-w.1muvpEuKRjT2pR8bi1-s7KBUFSk; Http
+Action.c(19):     Only; Path=/\r\n
+Action.c(19):     \r\n
+Action.c(19): t=5176ms: 115-byte response body for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=11)
+Action.c(19):     {\n
+Action.c(19):       "code": 200, \n
+Action.c(19):       "data": {\n
+Action.c(19):         "token": "gre6b7cl-ufl7-h8t6-4jrf-kal9oocpxgp4"\n
+Action.c(19):       }, \n
+Action.c(19):       "msg": "ÁôªÂΩïÊàêÂäü!"\n
+Action.c(19):     }\n
+Action.c(19): Notify: Saving Parameter "token1 = gre6b7cl-ufl7-h8t6-4jrf-kal9oocpxgp4".
+Action.c(19): HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://132.232.44.158:5000/userLogin/"  	[MsgId: MMSG-26548]
+Action.c(19): t=5217ms: Request done "http://132.232.44.158:5000/userLogin/"  	[MsgId: MMSG-26000]
+Action.c(19): Registered web_reg_find successful for "Text="code": 200," (count=1)  	[MsgId: MMSG-26364]
+Action.c(19): web_custom_request("web_custom_request") was successful, 115 body bytes, 546 header bytes  	[MsgId: MMSG-26386]
+Action.c(29): Notify: Transaction "µ«¬º" ended with "Pass" status (Duration: 0.3076 Wasted Time: 0.0045).
+Action.c(36): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(36): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(39): Notify: Transaction "ªÿ∏¥Œƒ’¬" started.
+Action.c(41): web_custom_request("web_custom_request") started  	[MsgId: MMSG-26355]
+Action.c(41): Notify: Parameter Substitution: parameter "token1" =  "gre6b7cl-ufl7-h8t6-4jrf-kal9oocpxgp4"
+Action.c(41): t=5315ms: Already connected [0] to 132.232.44.158:5000  	[MsgId: MMSG-26000]
+Action.c(41): t=5320ms: 619-byte request headers for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=12)
+Action.c(41):     POST /articleComment/ HTTP/1.1\r\n
+Action.c(41):     Content-Type: application/json\r\n
+Action.c(41):     Cache-Control: no-cache\r\n
+Action.c(41):     User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT)\r\n
+Action.c(41):     Accept-Encoding: gzip, deflate\r\n
+Action.c(41):     Accept: */*\r\n
+Action.c(41):     Connection: Keep-Alive\r\n
+Action.c(41):     Host: 132.232.44.158:5000\r\n
+Action.c(41):     Cookie: session=.eJyVUMtuwyAQ_JVqz0EqxI-Ucy79iorABlNjsHgokaL8e9bC7aG3HtA-ZmdnlgfUjAnkA5QxC
+Action.c(41):     XMGCXAAZRFkqN4fQKP36xQDNkQnVAXP9KgW7_zEuGBieOODPI6SCxpBU7UqLobGwEU531JnQPac4mL3xmI_zY9ScHo
+Action.c(41):     OatkWF8ylJ3xVOd9iohHg4tj1A_USLUxz42e874mzQZWadpe5UEG3kFaJM25ObMLhMmrP6tWPbDqVgXXf6cpm5T9i1
+Action.c(41):     Ovdrh0x62p-72u2tg_6Y-uGelJlk3o2_OtfKs8X3XxzgA.Xd_V-w.1muvpEuKRjT2pR8bi1-s7KBUFSk\r\n
+Action.c(41):     Content-Length: 80\r\n
+Action.c(41):     \r\n
+Action.c(41): t=5408ms: 80-byte request body for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=12)
+Action.c(41):     {"id":1, "content":"no reapte!","token": "gre6b7cl-ufl7-h8t6-4jrf-kal9oocpxgp4"}
+Action.c(41): t=5432ms: 171-byte response headers for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=12)
+Action.c(41):     HTTP/1.1 200 OK\r\n
+Action.c(41):     Server: gunicorn/19.9.0\r\n
+Action.c(41):     Date: Thu, 28 Nov 2019 14:13:16 GMT\r\n
+Action.c(41):     Connection: keep-alive\r\n
+Action.c(41):     Content-Type: application/json\r\n
+Action.c(41):     Content-Length: 60\r\n
+Action.c(41):     Vary: Cookie\r\n
+Action.c(41):     \r\n
+Action.c(41): t=5483ms: 60-byte response body for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=12)
+Action.c(41):     {\n
+Action.c(41):       "code": 200, \n
+Action.c(41):       "data": {}, \n
+Action.c(41):       "msg": "ËØÑËÆ∫ÊàêÂäü!"\n
+Action.c(41):     }\n
+Action.c(41): HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://132.232.44.158:5000/articleComment/"  	[MsgId: MMSG-26548]
+Action.c(41): t=5518ms: Request done "http://132.232.44.158:5000/articleComment/"  	[MsgId: MMSG-26000]
+Action.c(41): Registered web_reg_find successful for "Text="code": 200," (count=1)  	[MsgId: MMSG-26364]
+Action.c(41): web_custom_request("web_custom_request") was successful, 60 body bytes, 171 header bytes  	[MsgId: MMSG-26386]
+Action.c(51): Notify: Transaction "ªÿ∏¥Œƒ’¬" ended with "Pass" status (Duration: 0.2596 Wasted Time: 0.0013).
+Ending action Action.
+Ending iteration 6.
+Starting iteration 7.
+t=5598ms: Closed connection [0] to 132.232.44.158:5000 after completing 2 requests  	[MsgId: MMSG-26000]
+Resetting all proxy auto-configuration information  	[MsgId: MMSG-26000]
+Notify: Next row for parameter password = 7 [table  = password].
+Notify: Getting new value for parameter 'password': table = 'account.dat' column = '1' row = '7'.
+Notify: Next row for parameter account = 7 [table  = account].
+Notify: Getting new value for parameter 'account': table = 'account.dat' column = '0' row = '7'.
+Starting action Action.
+Action.c(5): Rendezvous login
+Action.c(8): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(12): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(12): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(17): Notify: Transaction "µ«¬º" started.
+Action.c(19): web_custom_request("web_custom_request") started  	[MsgId: MMSG-26355]
+Action.c(19): Notify: Parameter Substitution: parameter "account" =  "test6"
+Action.c(19): Notify: Parameter Substitution: parameter "password" =  "123456"
+Action.c(19): t=5837ms: Connecting [0] to host 132.232.44.158:5000  	[MsgId: MMSG-26000]
+Action.c(19): t=5848ms: Connected socket [0] from 192.168.1.105:9112 to 132.232.44.158:5000 in 7 ms  	[MsgId: MMSG-26000]
+Action.c(19): t=5853ms: 262-byte request headers for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=13)
+Action.c(19):     POST /userLogin/ HTTP/1.1\r\n
+Action.c(19):     Content-Type: application/json\r\n
+Action.c(19):     Cache-Control: no-cache\r\n
+Action.c(19):     User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT)\r\n
+Action.c(19):     Accept-Encoding: gzip, deflate\r\n
+Action.c(19):     Accept: */*\r\n
+Action.c(19):     Connection: Keep-Alive\r\n
+Action.c(19):     Host: 132.232.44.158:5000\r\n
+Action.c(19):     Content-Length: 61\r\n
+Action.c(19):     \r\n
+Action.c(19): t=5902ms: 61-byte request body for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=13)
+Action.c(19):     {"username":"test6", "password":"123456", "captcha":"123456"}
+Action.c(19): t=5977ms: 547-byte response headers for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=13)
+Action.c(19):     HTTP/1.1 200 OK\r\n
+Action.c(19):     Server: gunicorn/19.9.0\r\n
+Action.c(19):     Date: Thu, 28 Nov 2019 14:13:16 GMT\r\n
+Action.c(19):     Connection: keep-alive\r\n
+Action.c(19):     Content-Type: application/json\r\n
+Action.c(19):     Content-Length: 115\r\n
+Action.c(19):     Vary: Cookie\r\n
+Action.c(19):     Set-Cookie: session=.eJyVUMtuxCAM_JXK5yAF8mjLeS_9igoFN6EhJAGzqXa1_14QaQ-99YD8GI9nzB1iQA_yD
+Action.c(19):     kprjyGABKhAjQjSRWsrGNDabVodFmTwqAgv6aVa1PyFccFE_8R72TxLLtII6jgoMqsrDFyUsSU1GmTXpLiMZ2MZ3_S
+Action.c(19):     PkjPD7NSSFxMG6hO-qRCO1acR4KJpu9zzaaGfCz_g15mY0SmK_nQZKBXpFl4BrTNmJ_t-64TqDJturwerqTbMXumT2
+Action.c(19):     SbSde_3Nny0iRk3_XtfsZU_6I-tA4dJUZZ6FPz9XyqPb9lHc1Y.Xd_V_A.OtM6f9KbNBX3hlpnZs12Q9Oi8Fc; Htt
+Action.c(19):     pOnly; Path=/\r\n
+Action.c(19):     \r\n
+Action.c(19): t=6094ms: 115-byte response body for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=13)
+Action.c(19):     {\n
+Action.c(19):       "code": 200, \n
+Action.c(19):       "data": {\n
+Action.c(19):         "token": "qqz52a5i-hz9w-0t0i-lvtj-l3utvq6q4sf4"\n
+Action.c(19):       }, \n
+Action.c(19):       "msg": "ÁôªÂΩïÊàêÂäü!"\n
+Action.c(19):     }\n
+Action.c(19): Notify: Saving Parameter "token1 = qqz52a5i-hz9w-0t0i-lvtj-l3utvq6q4sf4".
+Action.c(19): HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://132.232.44.158:5000/userLogin/"  	[MsgId: MMSG-26548]
+Action.c(19): t=6168ms: Request done "http://132.232.44.158:5000/userLogin/"  	[MsgId: MMSG-26000]
+Action.c(19): Registered web_reg_find successful for "Text="code": 200," (count=1)  	[MsgId: MMSG-26364]
+Action.c(19): web_custom_request("web_custom_request") was successful, 115 body bytes, 547 header bytes  	[MsgId: MMSG-26386]
+Action.c(29): Notify: Transaction "µ«¬º" ended with "Pass" status (Duration: 0.3982 Wasted Time: 0.0087).
+Action.c(36): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(36): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(39): Notify: Transaction "ªÿ∏¥Œƒ’¬" started.
+Action.c(41): web_custom_request("web_custom_request") started  	[MsgId: MMSG-26355]
+Action.c(41): Notify: Parameter Substitution: parameter "token1" =  "qqz52a5i-hz9w-0t0i-lvtj-l3utvq6q4sf4"
+Action.c(41): t=6313ms: Already connected [0] to 132.232.44.158:5000  	[MsgId: MMSG-26000]
+Action.c(41): t=6318ms: 620-byte request headers for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=14)
+Action.c(41):     POST /articleComment/ HTTP/1.1\r\n
+Action.c(41):     Content-Type: application/json\r\n
+Action.c(41):     Cache-Control: no-cache\r\n
+Action.c(41):     User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT)\r\n
+Action.c(41):     Accept-Encoding: gzip, deflate\r\n
+Action.c(41):     Accept: */*\r\n
+Action.c(41):     Connection: Keep-Alive\r\n
+Action.c(41):     Host: 132.232.44.158:5000\r\n
+Action.c(41):     Cookie: session=.eJyVUMtuxCAM_JXK5yAF8mjLeS_9igoFN6EhJAGzqXa1_14QaQ-99YD8GI9nzB1iQA_yDkprj
+Action.c(41):     yGABKhAjQjSRWsrGNDabVodFmTwqAgv6aVa1PyFccFE_8R72TxLLtII6jgoMqsrDFyUsSU1GmTXpLiMZ2MZ3_SPkjP
+Action.c(41):     D7NSSFxMG6hO-qRCO1acR4KJpu9zzaaGfCz_g15mY0SmK_nQZKBXpFl4BrTNmJ_t-64TqDJturwerqTbMXumT2SbSd
+Action.c(41):     e_3Nny0iRk3_XtfsZU_6I-tA4dJUZZ6FPz9XyqPb9lHc1Y.Xd_V_A.OtM6f9KbNBX3hlpnZs12Q9Oi8Fc\r\n
+Action.c(41):     Content-Length: 80\r\n
+Action.c(41):     \r\n
+Action.c(41): t=6426ms: 80-byte request body for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=14)
+Action.c(41):     {"id":1, "content":"no reapte!","token": "qqz52a5i-hz9w-0t0i-lvtj-l3utvq6q4sf4"}
+Action.c(41): t=6457ms: 171-byte response headers for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=14)
+Action.c(41):     HTTP/1.1 200 OK\r\n
+Action.c(41):     Server: gunicorn/19.9.0\r\n
+Action.c(41):     Date: Thu, 28 Nov 2019 14:13:17 GMT\r\n
+Action.c(41):     Connection: keep-alive\r\n
+Action.c(41):     Content-Type: application/json\r\n
+Action.c(41):     Content-Length: 60\r\n
+Action.c(41):     Vary: Cookie\r\n
+Action.c(41):     \r\n
+Action.c(41): t=6525ms: 60-byte response body for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=14)
+Action.c(41):     {\n
+Action.c(41):       "code": 200, \n
+Action.c(41):       "data": {}, \n
+Action.c(41):       "msg": "ËØÑËÆ∫ÊàêÂäü!"\n
+Action.c(41):     }\n
+Action.c(41): HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://132.232.44.158:5000/articleComment/"  	[MsgId: MMSG-26548]
+Action.c(41): t=6557ms: Request done "http://132.232.44.158:5000/articleComment/"  	[MsgId: MMSG-26000]
+Action.c(41): Registered web_reg_find successful for "Text="code": 200," (count=1)  	[MsgId: MMSG-26364]
+Action.c(41): web_custom_request("web_custom_request") was successful, 60 body bytes, 171 header bytes  	[MsgId: MMSG-26386]
+Action.c(51): Notify: Transaction "ªÿ∏¥Œƒ’¬" ended with "Pass" status (Duration: 0.3308 Wasted Time: 0.0015).
+Ending action Action.
+Ending iteration 7.
+Starting iteration 8.
+t=6659ms: Closed connection [0] to 132.232.44.158:5000 after completing 2 requests  	[MsgId: MMSG-26000]
+Resetting all proxy auto-configuration information  	[MsgId: MMSG-26000]
+Notify: Next row for parameter password = 8 [table  = password].
+Notify: Getting new value for parameter 'password': table = 'account.dat' column = '1' row = '8'.
+Notify: Next row for parameter account = 8 [table  = account].
+Notify: Getting new value for parameter 'account': table = 'account.dat' column = '0' row = '8'.
+Starting action Action.
+Action.c(5): Rendezvous login
+Action.c(8): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(12): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(12): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(17): Notify: Transaction "µ«¬º" started.
+Action.c(19): web_custom_request("web_custom_request") started  	[MsgId: MMSG-26355]
+Action.c(19): Notify: Parameter Substitution: parameter "account" =  "test7"
+Action.c(19): Notify: Parameter Substitution: parameter "password" =  "123456"
+Action.c(19): t=6810ms: Connecting [0] to host 132.232.44.158:5000  	[MsgId: MMSG-26000]
+Action.c(19): t=6831ms: Connected socket [0] from 192.168.1.105:9113 to 132.232.44.158:5000 in 7 ms  	[MsgId: MMSG-26000]
+Action.c(19): t=6835ms: 262-byte request headers for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=15)
+Action.c(19):     POST /userLogin/ HTTP/1.1\r\n
+Action.c(19):     Content-Type: application/json\r\n
+Action.c(19):     Cache-Control: no-cache\r\n
+Action.c(19):     User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT)\r\n
+Action.c(19):     Accept-Encoding: gzip, deflate\r\n
+Action.c(19):     Accept: */*\r\n
+Action.c(19):     Connection: Keep-Alive\r\n
+Action.c(19):     Host: 132.232.44.158:5000\r\n
+Action.c(19):     Content-Length: 61\r\n
+Action.c(19):     \r\n
+Action.c(19): t=6890ms: 61-byte request body for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=15)
+Action.c(19):     {"username":"test7", "password":"123456", "captcha":"123456"}
+Action.c(19): t=6959ms: 547-byte response headers for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=15)
+Action.c(19):     HTTP/1.1 200 OK\r\n
+Action.c(19):     Server: gunicorn/19.9.0\r\n
+Action.c(19):     Date: Thu, 28 Nov 2019 14:13:17 GMT\r\n
+Action.c(19):     Connection: keep-alive\r\n
+Action.c(19):     Content-Type: application/json\r\n
+Action.c(19):     Content-Length: 115\r\n
+Action.c(19):     Vary: Cookie\r\n
+Action.c(19):     Set-Cookie: session=.eJyVULtuwzAM_JWCswVEdmMHmrvkKwpCYh1BsuzoUScN8u-lIbdDtw4CH8fjHfWAkiiCe
+Action.c(19):     gAaEyklUAAN4EigQvG-AU3eL5c5UEV0JMz0xo_r9iBPQrai7V9kr7pByZZHyBSN2c6hMmhC62tqDajjgeM07o1pPJs
+Action.c(19):     fpWC1CzhtizOlPDC-YErrHHkEZNu9HnvuRV4YXeUnuu2JHQPmEneXKXPBt8gG8uxoc9J96uFrORlxd9cstBycCPSBI
+Action.c(19):     tprl-mm7zitzCyL-b2v2to-6I-tlfQF8yb1rPj7v1Se3yfQdKs.Xd_V_Q.22LHIM-MCDd2ajjJoLR2D0CetFs; Htt
+Action.c(19):     pOnly; Path=/\r\n
+Action.c(19):     \r\n
+Action.c(19): t=7111ms: 115-byte response body for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=15)
+Action.c(19):     {\n
+Action.c(19):       "code": 200, \n
+Action.c(19):       "data": {\n
+Action.c(19):         "token": "3vc7zp8d-ykqt-c17k-nefa-riq3texcyamw"\n
+Action.c(19):       }, \n
+Action.c(19):       "msg": "ÁôªÂΩïÊàêÂäü!"\n
+Action.c(19):     }\n
+Action.c(19): Notify: Saving Parameter "token1 = 3vc7zp8d-ykqt-c17k-nefa-riq3texcyamw".
+Action.c(19): HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://132.232.44.158:5000/userLogin/"  	[MsgId: MMSG-26548]
+Action.c(19): t=7177ms: Request done "http://132.232.44.158:5000/userLogin/"  	[MsgId: MMSG-26000]
+Action.c(19): Registered web_reg_find successful for "Text="code": 200," (count=1)  	[MsgId: MMSG-26364]
+Action.c(19): web_custom_request("web_custom_request") was successful, 115 body bytes, 547 header bytes  	[MsgId: MMSG-26386]
+Action.c(29): Notify: Transaction "µ«¬º" ended with "Pass" status (Duration: 0.4324 Wasted Time: 0.0073).
+Action.c(36): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(36): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(39): Notify: Transaction "ªÿ∏¥Œƒ’¬" started.
+Action.c(41): web_custom_request("web_custom_request") started  	[MsgId: MMSG-26355]
+Action.c(41): Notify: Parameter Substitution: parameter "token1" =  "3vc7zp8d-ykqt-c17k-nefa-riq3texcyamw"
+Action.c(41): t=7277ms: Already connected [0] to 132.232.44.158:5000  	[MsgId: MMSG-26000]
+Action.c(41): t=7285ms: 620-byte request headers for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=16)
+Action.c(41):     POST /articleComment/ HTTP/1.1\r\n
+Action.c(41):     Content-Type: application/json\r\n
+Action.c(41):     Cache-Control: no-cache\r\n
+Action.c(41):     User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT)\r\n
+Action.c(41):     Accept-Encoding: gzip, deflate\r\n
+Action.c(41):     Accept: */*\r\n
+Action.c(41):     Connection: Keep-Alive\r\n
+Action.c(41):     Host: 132.232.44.158:5000\r\n
+Action.c(41):     Cookie: session=.eJyVULtuwzAM_JWCswVEdmMHmrvkKwpCYh1BsuzoUScN8u-lIbdDtw4CH8fjHfWAkiiCegAaE
+Action.c(41):     yklUAAN4EigQvG-AU3eL5c5UEV0JMz0xo_r9iBPQrai7V9kr7pByZZHyBSN2c6hMmhC62tqDajjgeM07o1pPJsfpWC
+Action.c(41):     1CzhtizOlPDC-YErrHHkEZNu9HnvuRV4YXeUnuu2JHQPmEneXKXPBt8gG8uxoc9J96uFrORlxd9cstBycCPSBItprl
+Action.c(41):     -mm7zitzCyL-b2v2to-6I-tlfQF8yb1rPj7v1Se3yfQdKs.Xd_V_Q.22LHIM-MCDd2ajjJoLR2D0CetFs\r\n
+Action.c(41):     Content-Length: 80\r\n
+Action.c(41):     \r\n
+Action.c(41): t=7381ms: 80-byte request body for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=16)
+Action.c(41):     {"id":1, "content":"no reapte!","token": "3vc7zp8d-ykqt-c17k-nefa-riq3texcyamw"}
+Action.c(41): t=7409ms: 171-byte response headers for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=16)
+Action.c(41):     HTTP/1.1 200 OK\r\n
+Action.c(41):     Server: gunicorn/19.9.0\r\n
+Action.c(41):     Date: Thu, 28 Nov 2019 14:13:18 GMT\r\n
+Action.c(41):     Connection: keep-alive\r\n
+Action.c(41):     Content-Type: application/json\r\n
+Action.c(41):     Content-Length: 60\r\n
+Action.c(41):     Vary: Cookie\r\n
+Action.c(41):     \r\n
+Action.c(41): t=7458ms: 60-byte response body for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=16)
+Action.c(41):     {\n
+Action.c(41):       "code": 200, \n
+Action.c(41):       "data": {}, \n
+Action.c(41):       "msg": "ËØÑËÆ∫ÊàêÂäü!"\n
+Action.c(41):     }\n
+Action.c(41): HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://132.232.44.158:5000/articleComment/"  	[MsgId: MMSG-26548]
+Action.c(41): t=7492ms: Request done "http://132.232.44.158:5000/articleComment/"  	[MsgId: MMSG-26000]
+Action.c(41): Registered web_reg_find successful for "Text="code": 200," (count=1)  	[MsgId: MMSG-26364]
+Action.c(41): web_custom_request("web_custom_request") was successful, 60 body bytes, 171 header bytes  	[MsgId: MMSG-26386]
+Action.c(51): Notify: Transaction "ªÿ∏¥Œƒ’¬" ended with "Pass" status (Duration: 0.2782 Wasted Time: 0.0020).
+Ending action Action.
+Ending iteration 8.
+Starting iteration 9.
+t=7584ms: Closed connection [0] to 132.232.44.158:5000 after completing 2 requests  	[MsgId: MMSG-26000]
+Resetting all proxy auto-configuration information  	[MsgId: MMSG-26000]
+Notify: Next row for parameter password = 9 [table  = password].
+Notify: Getting new value for parameter 'password': table = 'account.dat' column = '1' row = '9'.
+Notify: Next row for parameter account = 9 [table  = account].
+Notify: Getting new value for parameter 'account': table = 'account.dat' column = '0' row = '9'.
+Starting action Action.
+Action.c(5): Rendezvous login
+Action.c(8): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(12): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(12): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(17): Notify: Transaction "µ«¬º" started.
+Action.c(19): web_custom_request("web_custom_request") started  	[MsgId: MMSG-26355]
+Action.c(19): Notify: Parameter Substitution: parameter "account" =  "test8"
+Action.c(19): Notify: Parameter Substitution: parameter "password" =  "123456"
+Action.c(19): t=7777ms: Connecting [0] to host 132.232.44.158:5000  	[MsgId: MMSG-26000]
+Action.c(19): t=7794ms: Connected socket [0] from 192.168.1.105:9114 to 132.232.44.158:5000 in 8 ms  	[MsgId: MMSG-26000]
+Action.c(19): t=7798ms: 262-byte request headers for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=17)
+Action.c(19):     POST /userLogin/ HTTP/1.1\r\n
+Action.c(19):     Content-Type: application/json\r\n
+Action.c(19):     Cache-Control: no-cache\r\n
+Action.c(19):     User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT)\r\n
+Action.c(19):     Accept-Encoding: gzip, deflate\r\n
+Action.c(19):     Accept: */*\r\n
+Action.c(19):     Connection: Keep-Alive\r\n
+Action.c(19):     Host: 132.232.44.158:5000\r\n
+Action.c(19):     Content-Length: 61\r\n
+Action.c(19):     \r\n
+Action.c(19): t=7857ms: 61-byte request body for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=17)
+Action.c(19):     {"username":"test8", "password":"123456", "captcha":"123456"}
+Action.c(19): t=7932ms: 547-byte response headers for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=17)
+Action.c(19):     HTTP/1.1 200 OK\r\n
+Action.c(19):     Server: gunicorn/19.9.0\r\n
+Action.c(19):     Date: Thu, 28 Nov 2019 14:13:18 GMT\r\n
+Action.c(19):     Connection: keep-alive\r\n
+Action.c(19):     Content-Type: application/json\r\n
+Action.c(19):     Content-Length: 115\r\n
+Action.c(19):     Vary: Cookie\r\n
+Action.c(19):     Set-Cookie: session=.eJyVUMtuwyAQ_JVqz0YKxLEjzr30KypiVg4Cg8OjthLl37sWTg699YD2MTs7szygJIwgH
+Action.c(19):     6C0jpgSSIAG1IggfXGugQGdm6_BY0WGiCrjJz2qxYGfGRdMdB-8k8deckEjqMugsgm-MnBSxtXUaJBtS3Ea98Y0fum
+Action.c(19):     XkjeD9WraFmdM-Uz4rFJaQqQR4OLYnjrqRVoYbeUnXPfEjF7lEneXKVNBt_AGcrC4OTEXsfTK_7C89oHh5WCZSz6yt
+Action.c(19):     bfL_X6Kab5ZYpZZv--rtrYP-mNrweGq8ib1rPj3v1Sev06FdSY.Xd_V_g.Up_DQskNzQtGmWlvL5GUPkXWmkE; Htt
+Action.c(19):     pOnly; Path=/\r\n
+Action.c(19):     \r\n
+Action.c(19): t=8020ms: 115-byte response body for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=17)
+Action.c(19):     {\n
+Action.c(19):       "code": 200, \n
+Action.c(19):       "data": {\n
+Action.c(19):         "token": "ib2w7anv-tx7o-eb0k-lsnr-x7kwzz5rspqk"\n
+Action.c(19):       }, \n
+Action.c(19):       "msg": "ÁôªÂΩïÊàêÂäü!"\n
+Action.c(19):     }\n
+Action.c(19): Notify: Saving Parameter "token1 = ib2w7anv-tx7o-eb0k-lsnr-x7kwzz5rspqk".
+Action.c(19): HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://132.232.44.158:5000/userLogin/"  	[MsgId: MMSG-26548]
+Action.c(19): t=8061ms: Request done "http://132.232.44.158:5000/userLogin/"  	[MsgId: MMSG-26000]
+Action.c(19): Registered web_reg_find successful for "Text="code": 200," (count=1)  	[MsgId: MMSG-26364]
+Action.c(19): web_custom_request("web_custom_request") was successful, 115 body bytes, 547 header bytes  	[MsgId: MMSG-26386]
+Action.c(29): Notify: Transaction "µ«¬º" ended with "Pass" status (Duration: 0.3468 Wasted Time: 0.0054).
+Action.c(36): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(36): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(39): Notify: Transaction "ªÿ∏¥Œƒ’¬" started.
+Action.c(41): web_custom_request("web_custom_request") started  	[MsgId: MMSG-26355]
+Action.c(41): Notify: Parameter Substitution: parameter "token1" =  "ib2w7anv-tx7o-eb0k-lsnr-x7kwzz5rspqk"
+Action.c(41): t=8175ms: Already connected [0] to 132.232.44.158:5000  	[MsgId: MMSG-26000]
+Action.c(41): t=8180ms: 620-byte request headers for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=18)
+Action.c(41):     POST /articleComment/ HTTP/1.1\r\n
+Action.c(41):     Content-Type: application/json\r\n
+Action.c(41):     Cache-Control: no-cache\r\n
+Action.c(41):     User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT)\r\n
+Action.c(41):     Accept-Encoding: gzip, deflate\r\n
+Action.c(41):     Accept: */*\r\n
+Action.c(41):     Connection: Keep-Alive\r\n
+Action.c(41):     Host: 132.232.44.158:5000\r\n
+Action.c(41):     Cookie: session=.eJyVUMtuwyAQ_JVqz0YKxLEjzr30KypiVg4Cg8OjthLl37sWTg699YD2MTs7szygJIwgH6C0j
+Action.c(41):     pgSSIAG1IggfXGugQGdm6_BY0WGiCrjJz2qxYGfGRdMdB-8k8deckEjqMugsgm-MnBSxtXUaJBtS3Ea98Y0fumXkje
+Action.c(41):     D9WraFmdM-Uz4rFJaQqQR4OLYnjrqRVoYbeUnXPfEjF7lEneXKVNBt_AGcrC4OTEXsfTK_7C89oHh5WCZSz6ytbfL_
+Action.c(41):     X6Kab5ZYpZZv--rtrYP-mNrweGq8ib1rPj3v1Sev06FdSY.Xd_V_g.Up_DQskNzQtGmWlvL5GUPkXWmkE\r\n
+Action.c(41):     Content-Length: 80\r\n
+Action.c(41):     \r\n
+Action.c(41): t=8259ms: 80-byte request body for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=18)
+Action.c(41):     {"id":1, "content":"no reapte!","token": "ib2w7anv-tx7o-eb0k-lsnr-x7kwzz5rspqk"}
+Action.c(41): t=8294ms: 171-byte response headers for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=18)
+Action.c(41):     HTTP/1.1 200 OK\r\n
+Action.c(41):     Server: gunicorn/19.9.0\r\n
+Action.c(41):     Date: Thu, 28 Nov 2019 14:13:18 GMT\r\n
+Action.c(41):     Connection: keep-alive\r\n
+Action.c(41):     Content-Type: application/json\r\n
+Action.c(41):     Content-Length: 60\r\n
+Action.c(41):     Vary: Cookie\r\n
+Action.c(41):     \r\n
+Action.c(41): t=8353ms: 60-byte response body for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=18)
+Action.c(41):     {\n
+Action.c(41):       "code": 200, \n
+Action.c(41):       "data": {}, \n
+Action.c(41):       "msg": "ËØÑËÆ∫ÊàêÂäü!"\n
+Action.c(41):     }\n
+Action.c(41): HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://132.232.44.158:5000/articleComment/"  	[MsgId: MMSG-26548]
+Action.c(41): t=8411ms: Request done "http://132.232.44.158:5000/articleComment/"  	[MsgId: MMSG-26000]
+Action.c(41): Registered web_reg_find successful for "Text="code": 200," (count=1)  	[MsgId: MMSG-26364]
+Action.c(41): web_custom_request("web_custom_request") was successful, 60 body bytes, 171 header bytes  	[MsgId: MMSG-26386]
+Action.c(51): Notify: Transaction "ªÿ∏¥Œƒ’¬" ended with "Pass" status (Duration: 0.3130 Wasted Time: 0.0014).
+Ending action Action.
+Ending iteration 9.
+Starting iteration 10.
+t=8528ms: Closed connection [0] to 132.232.44.158:5000 after completing 2 requests  	[MsgId: MMSG-26000]
+Resetting all proxy auto-configuration information  	[MsgId: MMSG-26000]
+Notify: Next row for parameter password = 10 [table  = password].
+Notify: Getting new value for parameter 'password': table = 'account.dat' column = '1' row = '10'.
+Notify: Next row for parameter account = 10 [table  = account].
+Notify: Getting new value for parameter 'account': table = 'account.dat' column = '0' row = '10'.
+Starting action Action.
+Action.c(5): Rendezvous login
+Action.c(8): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(12): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(12): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(17): Notify: Transaction "µ«¬º" started.
+Action.c(19): web_custom_request("web_custom_request") started  	[MsgId: MMSG-26355]
+Action.c(19): Notify: Parameter Substitution: parameter "account" =  "test9"
+Action.c(19): Notify: Parameter Substitution: parameter "password" =  "123456"
+Action.c(19): t=8680ms: Connecting [0] to host 132.232.44.158:5000  	[MsgId: MMSG-26000]
+Action.c(19): t=8698ms: Connected socket [0] from 192.168.1.105:9115 to 132.232.44.158:5000 in 7 ms  	[MsgId: MMSG-26000]
+Action.c(19): t=8703ms: 262-byte request headers for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=19)
+Action.c(19):     POST /userLogin/ HTTP/1.1\r\n
+Action.c(19):     Content-Type: application/json\r\n
+Action.c(19):     Cache-Control: no-cache\r\n
+Action.c(19):     User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT)\r\n
+Action.c(19):     Accept-Encoding: gzip, deflate\r\n
+Action.c(19):     Accept: */*\r\n
+Action.c(19):     Connection: Keep-Alive\r\n
+Action.c(19):     Host: 132.232.44.158:5000\r\n
+Action.c(19):     Content-Length: 61\r\n
+Action.c(19):     \r\n
+Action.c(19): t=8747ms: 61-byte request body for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=19)
+Action.c(19):     {"username":"test9", "password":"123456", "captcha":"123456"}
+Action.c(19): t=8813ms: 548-byte response headers for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=19)
+Action.c(19):     HTTP/1.1 200 OK\r\n
+Action.c(19):     Server: gunicorn/19.9.0\r\n
+Action.c(19):     Date: Thu, 28 Nov 2019 14:13:19 GMT\r\n
+Action.c(19):     Connection: keep-alive\r\n
+Action.c(19):     Content-Type: application/json\r\n
+Action.c(19):     Content-Length: 115\r\n
+Action.c(19):     Vary: Cookie\r\n
+Action.c(19):     Set-Cookie: session=.eJyVULtuwzAM_JWCswVEjuu4mrP0KwpWYh1BtuToATcN8u-lIbdDtw4CH8fjHXWHkiiCu
+Action.c(19):     gMaEyklUAAN4EigfJmmBjRN03IJniqiI2GmMz-u24MchGxF2z_JXh1PSrY8QqZozDb4yqAZ7VRTa0B1A8d53Bvz-Gp
+Action.c(19):     -lLzVzuO8Lc6U8gvjC6a0hsgjINtj99xzL_LC6Co_0eee2NFjLnF3mTIXfItsIAdHm5Prh0P9Za8ilN6Jd7PcxOpuK
+Action.c(19):     FIYcvLrejpQx8yymN_7qq3tg_7YWklfMG9Sj4q__Uvl8Q2BIHVe.Xd_V_w.07pgDPSi3gh_PuryQYMD82BRTk0; Ht
+Action.c(19):     tpOnly; Path=/\r\n
+Action.c(19):     \r\n
+Action.c(19): t=8917ms: 115-byte response body for "http://132.232.44.158:5000/userLogin/" (RelFrameId=1, Internal ID=19)
+Action.c(19):     {\n
+Action.c(19):       "code": 200, \n
+Action.c(19):       "data": {\n
+Action.c(19):         "token": "qfkacziq-ou6k-bdpy-wkya-so8tsnww70e4"\n
+Action.c(19):       }, \n
+Action.c(19):       "msg": "ÁôªÂΩïÊàêÂäü!"\n
+Action.c(19):     }\n
+Action.c(19): Notify: Saving Parameter "token1 = qfkacziq-ou6k-bdpy-wkya-so8tsnww70e4".
+Action.c(19): HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://132.232.44.158:5000/userLogin/"  	[MsgId: MMSG-26548]
+Action.c(19): t=8957ms: Request done "http://132.232.44.158:5000/userLogin/"  	[MsgId: MMSG-26000]
+Action.c(19): Registered web_reg_find successful for "Text="code": 200," (count=1)  	[MsgId: MMSG-26364]
+Action.c(19): web_custom_request("web_custom_request") was successful, 115 body bytes, 548 header bytes  	[MsgId: MMSG-26386]
+Action.c(29): Notify: Transaction "µ«¬º" ended with "Pass" status (Duration: 0.3693 Wasted Time: 0.0051).
+Action.c(36): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(36): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(39): Notify: Transaction "ªÿ∏¥Œƒ’¬" started.
+Action.c(41): web_custom_request("web_custom_request") started  	[MsgId: MMSG-26355]
+Action.c(41): Notify: Parameter Substitution: parameter "token1" =  "qfkacziq-ou6k-bdpy-wkya-so8tsnww70e4"
+Action.c(41): t=9169ms: Already connected [0] to 132.232.44.158:5000  	[MsgId: MMSG-26000]
+Action.c(41): t=9176ms: 621-byte request headers for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=20)
+Action.c(41):     POST /articleComment/ HTTP/1.1\r\n
+Action.c(41):     Content-Type: application/json\r\n
+Action.c(41):     Cache-Control: no-cache\r\n
+Action.c(41):     User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT)\r\n
+Action.c(41):     Accept-Encoding: gzip, deflate\r\n
+Action.c(41):     Accept: */*\r\n
+Action.c(41):     Connection: Keep-Alive\r\n
+Action.c(41):     Host: 132.232.44.158:5000\r\n
+Action.c(41):     Cookie: session=.eJyVULtuwzAM_JWCswVEjuu4mrP0KwpWYh1BtuToATcN8u-lIbdDtw4CH8fjHXWHkiiCugMaE
+Action.c(41):     yklUAAN4EigfJmmBjRN03IJniqiI2GmMz-u24MchGxF2z_JXh1PSrY8QqZozDb4yqAZ7VRTa0B1A8d53Bvz-Gp-lLz
+Action.c(41):     VzuO8Lc6U8gvjC6a0hsgjINtj99xzL_LC6Co_0eee2NFjLnF3mTIXfItsIAdHm5Prh0P9Za8ilN6Jd7PcxOpuKFIYc
+Action.c(41):     vLrejpQx8yymN_7qq3tg_7YWklfMG9Sj4q__Uvl8Q2BIHVe.Xd_V_w.07pgDPSi3gh_PuryQYMD82BRTk0\r\n
+Action.c(41):     Content-Length: 80\r\n
+Action.c(41):     \r\n
+Action.c(41): t=9278ms: 80-byte request body for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=20)
+Action.c(41):     {"id":1, "content":"no reapte!","token": "qfkacziq-ou6k-bdpy-wkya-so8tsnww70e4"}
+Action.c(41): t=9306ms: 171-byte response headers for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=20)
+Action.c(41):     HTTP/1.1 200 OK\r\n
+Action.c(41):     Server: gunicorn/19.9.0\r\n
+Action.c(41):     Date: Thu, 28 Nov 2019 14:13:19 GMT\r\n
+Action.c(41):     Connection: keep-alive\r\n
+Action.c(41):     Content-Type: application/json\r\n
+Action.c(41):     Content-Length: 60\r\n
+Action.c(41):     Vary: Cookie\r\n
+Action.c(41):     \r\n
+Action.c(41): t=9382ms: 60-byte response body for "http://132.232.44.158:5000/articleComment/" (RelFrameId=1, Internal ID=20)
+Action.c(41):     {\n
+Action.c(41):       "code": 200, \n
+Action.c(41):       "data": {}, \n
+Action.c(41):       "msg": "ËØÑËÆ∫ÊàêÂäü!"\n
+Action.c(41):     }\n
+Action.c(41): HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://132.232.44.158:5000/articleComment/"  	[MsgId: MMSG-26548]
+Action.c(41): t=9419ms: Request done "http://132.232.44.158:5000/articleComment/"  	[MsgId: MMSG-26000]
+Action.c(41): Registered web_reg_find successful for "Text="code": 200," (count=1)  	[MsgId: MMSG-26364]
+Action.c(41): web_custom_request("web_custom_request") was successful, 60 body bytes, 171 header bytes  	[MsgId: MMSG-26386]
+Action.c(51): Notify: Transaction "ªÿ∏¥Œƒ’¬" ended with "Pass" status (Duration: 0.3179 Wasted Time: 0.0013).
+Ending action Action.
+Ending iteration 10.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
+t=9679ms: Closed connection [0] to 132.232.44.158:5000 after completing 2 requests  	[MsgId: MMSG-26000]

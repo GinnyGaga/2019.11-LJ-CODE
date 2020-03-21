@@ -1,0 +1,170 @@
+{
+  "8a062600c192e4248c655b07e9bb83d1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 13,
+      "unknown" : 0,
+      "total" : 13
+    },
+    "items" : [ {
+      "uid" : "fbd118615ecdd7bf",
+      "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/17/allure/#testresult/fbd118615ecdd7bf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574260742659,
+        "stop" : 1574260742751,
+        "duration" : 92
+      }
+    }, {
+      "uid" : "54dea21c6a684c99",
+      "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/16/allure/#testresult/54dea21c6a684c99",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574260622848,
+        "stop" : 1574260622932,
+        "duration" : 84
+      }
+    }, {
+      "uid" : "119b19cd0f723268",
+      "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/15/allure/#testresult/119b19cd0f723268",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574260503167,
+        "stop" : 1574260503250,
+        "duration" : 83
+      }
+    }, {
+      "uid" : "1bc41342af167947",
+      "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/14/allure/#testresult/1bc41342af167947",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574260383002,
+        "stop" : 1574260383091,
+        "duration" : 89
+      }
+    }, {
+      "uid" : "53afbba56c4cd36e",
+      "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/13/allure/#testresult/53afbba56c4cd36e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574260263018,
+        "stop" : 1574260263123,
+        "duration" : 105
+      }
+    } ]
+  },
+  "f0e9d61a92b5f7ecdfe581958d26d033" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 13,
+      "unknown" : 0,
+      "total" : 13
+    },
+    "items" : [ {
+      "uid" : "69e400c3cc0ddaa1",
+      "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/17/allure/#testresult/69e400c3cc0ddaa1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574260742847,
+        "stop" : 1574260742929,
+        "duration" : 82
+      }
+    }, {
+      "uid" : "20136f8c6d384108",
+      "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/16/allure/#testresult/20136f8c6d384108",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574260623020,
+        "stop" : 1574260623094,
+        "duration" : 74
+      }
+    }, {
+      "uid" : "232dba63394b9854",
+      "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/15/allure/#testresult/232dba63394b9854",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574260503348,
+        "stop" : 1574260503423,
+        "duration" : 75
+      }
+    }, {
+      "uid" : "42d7cd62e111e6ee",
+      "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/14/allure/#testresult/42d7cd62e111e6ee",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574260383187,
+        "stop" : 1574260383271,
+        "duration" : 84
+      }
+    }, {
+      "uid" : "9b4e5773f95fca36",
+      "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/13/allure/#testresult/9b4e5773f95fca36",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574260263219,
+        "stop" : 1574260263296,
+        "duration" : 77
+      }
+    } ]
+  },
+  "d98b29543e3bfe579c8c45585a49e135" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 13,
+      "unknown" : 0,
+      "total" : 13
+    },
+    "items" : [ {
+      "uid" : "1d3945792de2b97e",
+      "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/17/allure/#testresult/1d3945792de2b97e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574260742761,
+        "stop" : 1574260742842,
+        "duration" : 81
+      }
+    }, {
+      "uid" : "560cff05aee10067",
+      "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/16/allure/#testresult/560cff05aee10067",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574260622943,
+        "stop" : 1574260623016,
+        "duration" : 73
+      }
+    }, {
+      "uid" : "f269688551201eaa",
+      "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/15/allure/#testresult/f269688551201eaa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574260503263,
+        "stop" : 1574260503341,
+        "duration" : 78
+      }
+    }, {
+      "uid" : "f5124677c5478320",
+      "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/14/allure/#testresult/f5124677c5478320",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574260383102,
+        "stop" : 1574260383182,
+        "duration" : 80
+      }
+    }, {
+      "uid" : "f88a18c188aedf03",
+      "reportUrl" : "http://localhost:8080/jenkins/job/ljtest201910-pytest/13/allure/#testresult/f88a18c188aedf03",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574260263134,
+        "stop" : 1574260263212,
+        "duration" : 78
+      }
+    } ]
+  }
+}

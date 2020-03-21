@@ -1,0 +1,76 @@
+{
+  "uid" : "54b73373fe153036",
+  "name" : "test_03_index",
+  "fullName" : "test_login#test_03_index",
+  "historyId" : "f0e9d61a92b5f7ecdfe581958d26d033",
+  "time" : {
+    "start" : 1574260503348,
+    "stop" : 1574260503423,
+    "duration" : 75
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ad04ef6b2927b63d",
+      "name" : "log",
+      "source" : "ad04ef6b2927b63d.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "e5d209dbd4ba381f",
+      "name" : "stdout",
+      "source" : "e5d209dbd4ba381f.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "2c47a8ed8e7325f6",
+      "name" : "stderr",
+      "source" : "2c47a8ed8e7325f6.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 3,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "host",
+    "value" : "SNake"
+  }, {
+    "name" : "thread",
+    "value" : "76236-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "54b73373fe153036.json",
+  "parameterValues" : [ ]
+}
